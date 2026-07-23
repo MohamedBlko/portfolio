@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Engineering portfolio for Mohamed Marou Belko, focused on practical projects, technical skills, and early-career engineering roles."
+      content="Engineering portfolio for Mohamed Marou Belko, focused on applied projects, technical tools, testing, and early-career engineering roles."
     >
     <title>Mohamed Marou Belko | Engineering Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <canvas id="field-canvas" aria-hidden="true"></canvas>
+
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Mohamed Marou Belko home">
-        <span class="brand-mark">MB</span>
-        <span>Mohamed Marou Belko</span>
+        <span class="brand-symbol">MB</span>
+        <span class="brand-copy">
+          <strong>Mohamed</strong>
+          <small>Engineering Portfolio</small>
+        </span>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -31,175 +36,194 @@
       </button>
 
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#roadmap">Roadmap</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="home">
-      <section class="hero section">
-        <div class="hero-copy">
-          <p class="eyebrow">Engineering Graduate Portfolio</p>
-          <h1>Practical engineering projects, clear thinking, and hands-on problem solving.</h1>
-          <p class="hero-text">
-            I am building a focused portfolio for entry-level engineering roles, with projects that show
-            design decisions, technical tools, testing, documentation, and measurable outcomes.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Contact Me</a>
-          </div>
+      <section class="hero">
+        <div class="hero-kicker">
+          <span>Available for early-career engineering roles</span>
+          <span>Montreal / Remote</span>
         </div>
 
-        <aside class="hero-panel" aria-label="Portfolio highlights">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Portfolio v1.0</p>
+            <h1>
+              Applied engineering
+              <span>with visible proof.</span>
+            </h1>
+            <p class="hero-text">
+              I build project evidence for design, testing, analysis, documentation, and technical
+              decision-making. Each project is structured so a recruiter can quickly see the problem,
+              the tools, the approach, and the result.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button primary" href="#work">Explore Work</a>
+              <a class="button secondary" href="https://github.com/MohamedBlko">GitHub</a>
+            </div>
+          </div>
+
+          <aside class="console-card" aria-label="Portfolio status">
+            <div class="console-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre><code>candidate.status = "building proof";
+target.roles = [
+  "Graduate Engineer",
+  "Project Engineer",
+  "Design Engineer",
+  "QA / Test Engineer"
+];
+weekly.applications = "10-20 quality";
+portfolio.goal = "3-5 strong projects";</code></pre>
+          </aside>
+        </div>
+
+        <div class="signal-row" aria-label="Portfolio highlights">
           <div>
-            <span class="metric">3-5</span>
-            <span class="label">portfolio projects target</span>
+            <strong>01</strong>
+            <span>Project-first presentation</span>
           </div>
           <div>
-            <span class="metric">10-20</span>
-            <span class="label">quality applications per week</span>
+            <strong>02</strong>
+            <span>Tools, tradeoffs, and results</span>
           </div>
           <div>
-            <span class="metric">1 page</span>
-            <span class="label">resume focused on impact</span>
+            <strong>03</strong>
+            <span>Resume-ready evidence</span>
           </div>
-        </aside>
+        </div>
       </section>
 
-      <section class="section about" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">Profile</p>
-          <h2 id="about-title">About</h2>
-        </div>
-        <div class="about-grid">
+      <section class="section intro" aria-labelledby="intro-title">
+        <div class="section-label">Profile</div>
+        <div>
+          <h2 id="intro-title">I am turning engineering coursework into proof employers can inspect.</h2>
           <p>
-            I am an early-career engineering candidate focused on turning classroom knowledge into
-            applied work. This portfolio is organized to make each project easy to review: the problem,
-            the approach, the tools, and the result.
-          </p>
-          <p>
-            My goal is to qualify for roles such as Graduate Engineer, Engineering Associate, Project
-            Engineer, Field Engineer, Design Engineer, Engineering Technician, or QA/Test Engineer.
+            This portfolio is designed for entry-level engineering opportunities. It focuses on practical
+            evidence: project constraints, design decisions, validation steps, technical tools, and clear
+            documentation.
           </p>
         </div>
       </section>
 
-      <section id="projects" class="section" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2 id="projects-title">Projects</h2>
-          <p>Replace these starter entries with your real capstone, coursework, or independent projects.</p>
+      <section id="work" class="section" aria-labelledby="work-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2 id="work-title">Project Cards</h2>
+          </div>
+          <p>
+            Starter cards are ready to replace with your capstone, coursework, lab, or independent
+            engineering projects.
+          </p>
         </div>
 
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-media mechanical">CAD</div>
-            <div class="project-content">
-              <h3>Mechanical Design Study</h3>
-              <p>
-                Designed a compact mechanical assembly, documented constraints, compared design
-                alternatives, and prepared drawings for review.
-              </p>
-              <ul class="tag-list" aria-label="Tools used">
-                <li>SolidWorks</li>
-                <li>GD&T</li>
-                <li>Technical drawings</li>
-              </ul>
-              <a href="#" aria-label="Add a link to Mechanical Design Study">Add project link</a>
-            </div>
+            <a class="project-link" href="#" aria-label="Add a link for Mechanical Design Study">
+              <span>CAD / DESIGN</span>
+              <strong>Mechanical Design Study</strong>
+            </a>
+            <p>
+              Designed a compact assembly, compared alternatives, documented constraints, and prepared
+              review-ready drawings.
+            </p>
+            <ul class="tag-list">
+              <li>SolidWorks</li>
+              <li>GD&T</li>
+              <li>Drawings</li>
+            </ul>
+          </article>
+
+          <article class="project-card featured">
+            <a class="project-link" href="#" aria-label="Add a link for Engineering Data Analysis">
+              <span>ANALYSIS / REPORTING</span>
+              <strong>Engineering Data Analysis</strong>
+            </a>
+            <p>
+              Cleaned test data, built charts, interpreted trends, and summarized findings to support an
+              engineering decision.
+            </p>
+            <ul class="tag-list">
+              <li>Excel</li>
+              <li>Python</li>
+              <li>Technical report</li>
+            </ul>
           </article>
 
           <article class="project-card">
-            <div class="project-media analysis">DATA</div>
-            <div class="project-content">
-              <h3>Engineering Data Analysis</h3>
-              <p>
-                Cleaned measurement data, built charts, and summarized findings to support a practical
-                engineering decision.
-              </p>
-              <ul class="tag-list" aria-label="Tools used">
-                <li>Excel</li>
-                <li>Python</li>
-                <li>Reporting</li>
-              </ul>
-              <a href="#" aria-label="Add a link to Engineering Data Analysis">Add project link</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-media systems">TEST</div>
-            <div class="project-content">
-              <h3>Prototype Test Plan</h3>
-              <p>
-                Created a test plan for a prototype, defined acceptance criteria, recorded results, and
-                recommended design improvements.
-              </p>
-              <ul class="tag-list" aria-label="Tools used">
-                <li>Testing</li>
-                <li>Documentation</li>
-                <li>Quality</li>
-              </ul>
-              <a href="#" aria-label="Add a link to Prototype Test Plan">Add project link</a>
-            </div>
+            <a class="project-link" href="#" aria-label="Add a link for Prototype Test Plan">
+              <span>TEST / VALIDATION</span>
+              <strong>Prototype Test Plan</strong>
+            </a>
+            <p>
+              Defined acceptance criteria, recorded results, identified failure points, and recommended
+              design improvements.
+            </p>
+            <ul class="tag-list">
+              <li>Testing</li>
+              <li>Quality</li>
+              <li>Documentation</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="section skills-section" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2 id="skills-title">Skills</h2>
+      <section id="stack" class="section stack-section" aria-labelledby="stack-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Technical Stack</p>
+            <h2 id="stack-title">Skills Employers Scan For</h2>
+          </div>
         </div>
 
-        <div class="skills-grid">
+        <div class="stack-grid">
           <div>
+            <span>01</span>
             <h3>Engineering Tools</h3>
-            <ul>
-              <li>SolidWorks, AutoCAD, Inventor</li>
-              <li>GD&T and technical drawings</li>
-              <li>Excel analysis and documentation</li>
-            </ul>
+            <p>SolidWorks, AutoCAD, Inventor, GD&T, Excel, documentation, and technical drawings.</p>
           </div>
           <div>
-            <h3>Technical Workflow</h3>
-            <ul>
-              <li>Problem definition and requirements</li>
-              <li>Design comparison and tradeoffs</li>
-              <li>Testing, validation, and reporting</li>
-            </ul>
+            <span>02</span>
+            <h3>Workflow</h3>
+            <p>Requirements, concept comparison, tradeoff thinking, testing, validation, and reporting.</p>
           </div>
           <div>
-            <h3>Professional Strengths</h3>
-            <ul>
-              <li>Clear written communication</li>
-              <li>Team collaboration</li>
-              <li>Consistent project follow-through</li>
-            </ul>
+            <span>03</span>
+            <h3>Communication</h3>
+            <p>Clear project summaries, visual evidence, concise writing, and interview-ready explanations.</p>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="section timeline-section" aria-labelledby="experience-title">
-        <div class="section-heading">
-          <p class="eyebrow">Roadmap</p>
-          <h2 id="experience-title">90-Day Portfolio Plan</h2>
+      <section id="roadmap" class="section roadmap-section" aria-labelledby="roadmap-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Execution Plan</p>
+            <h2 id="roadmap-title">90-Day Build Plan</h2>
+          </div>
         </div>
 
         <ol class="timeline">
           <li>
             <span>Weeks 1-2</span>
-            <p>Polish resume and LinkedIn, then complete the first portfolio project page.</p>
+            <p>Polish resume and LinkedIn. Publish the first complete project case study.</p>
           </li>
           <li>
             <span>Weeks 3-6</span>
-            <p>Finish two or more projects and apply to 10-20 relevant jobs each week.</p>
+            <p>Finish two more projects and apply to 10-20 relevant roles per week.</p>
           </li>
           <li>
             <span>Weeks 7-12</span>
-            <p>Network weekly, practice interviews, and refine the resume based on feedback.</p>
+            <p>Network weekly, practice interviews, and refine project pages based on feedback.</p>
           </li>
         </ol>
       </section>
@@ -207,10 +231,10 @@
       <section id="contact" class="section contact-section" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Let us connect</h2>
+          <h2 id="contact-title">Let us build the next project.</h2>
           <p>
-            I am open to entry-level engineering, engineering technician, field, design, QA/testing,
-            and project support opportunities.
+            Open to entry-level engineering, engineering technician, field, design, QA/testing, and
+            project support opportunities.
           </p>
         </div>
         <div class="contact-links">
