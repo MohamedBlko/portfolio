@@ -1,18 +1,18 @@
-# Mohamed Marou Belko - Engineering Portfolio
+# Mohamed Marou Belko - Electrical Engineering Portfolio
 
-This repository contains a static engineering portfolio built for GitHub Pages.
+This repository contains a static electrical engineering themed portfolio built
+for GitHub Pages.
 
 ## Sections
 
-- About
 - Projects
+- About Me
 - Skills
-- 90-day portfolio plan
-- Contact links
+- Contact
 
 ## How to customize
 
-Edit `index.html` to replace the starter project cards with real projects.
+Edit `index.html` to replace the project cards with real projects.
 For each project, include:
 
 - the problem
@@ -23,6 +23,9 @@ For each project, include:
 
 Update the contact links in the `#contact` section with your real LinkedIn,
 email, resume, and GitHub URLs.
+
+The visual theme is driven by `styles.css` and `script.js`: neon electrical
+colors, circuit-style project visuals, and an animated electrical field canvas.
 
 ## Run locally
 

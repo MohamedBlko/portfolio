@@ -26,10 +26,23 @@ if (canvas) {
   const pointer = { x: 0.5, y: 0.5 };
   let width = 0;
   let height = 0;
-  let nodes = [];
+  let particles = [];
   let animationFrame = 0;
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function makeParticle(index) {
+    const rail = index % 4;
+    return {
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.35,
+      vy: (Math.random() - 0.5) * 0.35,
+      rail,
+      charge: Math.random() > 0.5 ? 1 : -1,
+      size: 1 + Math.random() * 2.4,
+    };
+  }
 
   function resizeCanvas() {
     const ratio = Math.min(window.devicePixelRatio || 1, 2);
@@ -41,43 +54,56 @@ if (canvas) {
     canvas.style.height = `${height}px`;
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
 
-    const count = Math.max(28, Math.min(72, Math.floor((width * height) / 18000)));
-    nodes = Array.from({ length: count }, (_, index) => ({
-      x: (index * 89) % width,
-      y: (index * 137) % height,
-      vx: (Math.random() - 0.5) * 0.28,
-      vy: (Math.random() - 0.5) * 0.28,
-      r: 1 + Math.random() * 1.8,
-    }));
+    const count = Math.max(34, Math.min(92, Math.floor((width * height) / 15000)));
+    particles = Array.from({ length: count }, (_, index) => makeParticle(index));
   }
 
-  function draw() {
+  function drawCircuitRails(time) {
+    ctx.lineWidth = 1;
+
+    for (let i = 0; i < 7; i += 1) {
+      const y = (height / 8) * (i + 1);
+      const pulse = (Math.sin(time * 0.0015 + i) + 1) / 2;
+      ctx.strokeStyle = `rgba(77, 245, 255, ${0.05 + pulse * 0.09})`;
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(width * 0.22, y);
+      ctx.lineTo(width * 0.29, y + 32);
+      ctx.lineTo(width, y + 32);
+      ctx.stroke();
+    }
+  }
+
+  function draw(time = 0) {
     ctx.clearRect(0, 0, width, height);
+    drawCircuitRails(time);
 
     const px = pointer.x * width;
     const py = pointer.y * height;
 
-    nodes.forEach((node) => {
+    particles.forEach((particle) => {
       if (!prefersReducedMotion) {
-        node.x += node.vx + (px - width / 2) * 0.00005;
-        node.y += node.vy + (py - height / 2) * 0.00005;
+        const pull = particle.charge * 0.00006;
+        particle.x += particle.vx + (px - particle.x) * pull;
+        particle.y += particle.vy + (py - particle.y) * pull;
       }
 
-      if (node.x < -20) node.x = width + 20;
-      if (node.x > width + 20) node.x = -20;
-      if (node.y < -20) node.y = height + 20;
-      if (node.y > height + 20) node.y = -20;
+      if (particle.x < -30) particle.x = width + 30;
+      if (particle.x > width + 30) particle.x = -30;
+      if (particle.y < -30) particle.y = height + 30;
+      if (particle.y > height + 30) particle.y = -30;
     });
 
-    for (let i = 0; i < nodes.length; i += 1) {
-      for (let j = i + 1; j < nodes.length; j += 1) {
-        const a = nodes[i];
-        const b = nodes[j];
+    for (let i = 0; i < particles.length; i += 1) {
+      for (let j = i + 1; j < particles.length; j += 1) {
+        const a = particles[i];
+        const b = particles[j];
         const distance = Math.hypot(a.x - b.x, a.y - b.y);
 
-        if (distance < 150) {
-          const opacity = (1 - distance / 150) * 0.24;
-          ctx.strokeStyle = `rgba(61, 214, 198, ${opacity})`;
+        if (distance < 132) {
+          const opacity = (1 - distance / 132) * 0.24;
+          const color = a.rail === b.rail ? "77, 245, 255" : "255, 94, 196";
+          ctx.strokeStyle = `rgba(${color}, ${opacity})`;
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
@@ -87,13 +113,14 @@ if (canvas) {
       }
     }
 
-    nodes.forEach((node) => {
-      const distanceToPointer = Math.hypot(node.x - px, node.y - py);
-      const glow = Math.max(0, 1 - distanceToPointer / 260);
+    particles.forEach((particle) => {
+      const distanceToPointer = Math.hypot(particle.x - px, particle.y - py);
+      const glow = Math.max(0, 1 - distanceToPointer / 240);
+      const color = particle.charge > 0 ? "77, 245, 255" : "255, 94, 196";
 
-      ctx.fillStyle = glow > 0 ? `rgba(255, 159, 69, ${0.35 + glow * 0.5})` : "rgba(247, 239, 226, 0.42)";
+      ctx.fillStyle = `rgba(${color}, ${0.42 + glow * 0.5})`;
       ctx.beginPath();
-      ctx.arc(node.x, node.y, node.r + glow * 2.4, 0, Math.PI * 2);
+      ctx.arc(particle.x, particle.y, particle.size + glow * 2.8, 0, Math.PI * 2);
       ctx.fill();
     });
 
