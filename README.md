@@ -1,4 +1,4 @@
-# Mohamed Marou Belko - Electrical Engineering Portfolio
+# Milan - Electrical Engineering Portfolio
 
 This repository contains a static electrical engineering themed portfolio built
 for GitHub Pages.
