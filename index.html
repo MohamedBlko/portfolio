@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Electrical engineering themed portfolio for Milan, featuring projects, skills, technical interests, and contact links."
+      content="Electrical engineering themed portfolio for Mohamed Marou Belko, featuring projects, skills, technical interests, and contact links."
     >
-    <title>Milan | Electrical Engineering Portfolio</title>
+    <title>Mohamed Marou Belko | Electrical Engineering Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,10 +21,10 @@
     <div class="scanline" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Milan home">
-        <span class="brand-symbol">M</span>
+      <a class="brand" href="#home" aria-label="Mohamed Marou Belko home">
+        <span class="brand-symbol">MB</span>
         <span class="brand-copy">
-          <strong>Milan</strong>
+          <strong>Mohamed Marou Belko</strong>
           <small>Electrical Engineering Portfolio</small>
         </span>
       </a>
@@ -49,8 +49,8 @@
         <div class="hero-copy">
           <p class="eyebrow">Electrical Engineering Portfolio</p>
           <h1>
-            Milan
-            <span>Electrical</span>
+            Mohamed
+            <span>Marou Belko</span>
           </h1>
           <p class="hero-text">
             A public portfolio for electrical engineering projects, circuit thinking, embedded systems,
@@ -83,8 +83,8 @@
           <p class="eyebrow">Projects</p>
           <h2 id="projects-title">Engineering work with clear evidence.</h2>
           <p>
-            These project cards are structured for recruiters: problem, tools, engineering role, and
-            outcome. Add real reports, photos, GitHub links, or PDFs as each project is completed.
+            Click a project to inspect the visual board, run a small simulation, and review the
+            documentation notes. Real photos, reports, GitHub links, and PDFs can be added later.
           </p>
         </div>
 
@@ -94,6 +94,7 @@
               <span></span>
               <span></span>
               <span></span>
+              <strong>Interactive Lab</strong>
             </div>
             <div class="project-content">
               <p class="project-type">Circuit Analysis</p>
@@ -107,6 +108,7 @@
                 <li>MATLAB</li>
                 <li>Lab report</li>
               </ul>
+              <button class="project-open" type="button" data-project="rlc">Open Project</button>
             </div>
           </article>
 
@@ -115,6 +117,7 @@
               <span></span>
               <span></span>
               <span></span>
+              <strong>Live Prototype</strong>
             </div>
             <div class="project-content">
               <p class="project-type">Embedded Systems</p>
@@ -128,6 +131,7 @@
                 <li>C/C++</li>
                 <li>Testing</li>
               </ul>
+              <button class="project-open" type="button" data-project="embedded">Open Project</button>
             </div>
           </article>
 
@@ -136,6 +140,7 @@
               <span></span>
               <span></span>
               <span></span>
+              <strong>System Map</strong>
             </div>
             <div class="project-content">
               <p class="project-type">Power Systems</p>
@@ -149,6 +154,7 @@
                 <li>Load planning</li>
                 <li>Documentation</li>
               </ul>
+              <button class="project-open" type="button" data-project="power">Open Project</button>
             </div>
           </article>
         </div>
@@ -221,8 +227,64 @@
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Milan. Built for GitHub Pages.</p>
+      <p>&copy; <span id="year"></span> Mohamed Marou Belko. Built for GitHub Pages.</p>
     </footer>
+
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-project></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close-project aria-label="Close project">Close</button>
+        <div class="modal-grid">
+          <div class="modal-visual">
+            <div class="detail-image" id="detail-image" aria-label="Project visual preview">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="sim-panel">
+              <div>
+                <p class="project-type">Simulation</p>
+                <h3 id="sim-title">Signal Response</h3>
+              </div>
+              <label>
+                Input Level
+                <input id="sim-slider" type="range" min="1" max="10" value="5">
+              </label>
+              <canvas id="sim-canvas" width="640" height="260" aria-label="Project simulation canvas"></canvas>
+            </div>
+          </div>
+          <div class="modal-copy">
+            <p class="eyebrow" id="modal-type">Project</p>
+            <h2 id="modal-title">Project title</h2>
+            <p id="modal-summary"></p>
+
+            <div class="detail-tabs" role="tablist" aria-label="Project details">
+              <button class="detail-tab is-active" type="button" data-tab="overview">Overview</button>
+              <button class="detail-tab" type="button" data-tab="docs">Docs</button>
+              <button class="detail-tab" type="button" data-tab="next">Assets</button>
+            </div>
+
+            <div class="detail-pane is-active" data-pane="overview">
+              <h3>What this shows</h3>
+              <ul id="modal-overview"></ul>
+            </div>
+            <div class="detail-pane" data-pane="docs">
+              <h3>Documentation notes</h3>
+              <ul id="modal-docs"></ul>
+            </div>
+            <div class="detail-pane" data-pane="next">
+              <h3>Artifacts to attach</h3>
+              <ul id="modal-assets"></ul>
+            </div>
+
+            <div class="modal-actions">
+              <a id="modal-github" href="https://github.com/MohamedBlko">GitHub Placeholder</a>
+              <a id="modal-report" href="#contact">Request Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <script src="script.js"></script>
   </body>
