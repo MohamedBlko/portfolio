@@ -7,7 +7,9 @@ portfolio built for GitHub Pages.
 
 - Projects
 - About Me
+- What Defines Me
 - Skills
+- Experience
 - Contact
 
 ## How to customize
