@@ -10,19 +10,19 @@ const simSlider = document.querySelector("#sim-slider");
 const simCanvas = document.querySelector("#sim-canvas");
 const projectDetails = {
   rlc: {
-    type: "Circuit Analysis",
-    title: "RLC Circuit Response Study",
+    type: "Signal Integrity",
+    title: "Transient Response Study",
     summary:
-      "Interactive project view for modeling, measuring, and explaining transient response in a resistor-inductor-capacitor circuit.",
+      "A compact technical brief for modeling, measuring, and explaining transient response as a system-stability signal.",
     visual: "rlc",
     sim: "Damped waveform",
     overview: [
-      "Shows circuit behavior through a visual response curve instead of only text.",
-      "Connects theory, measurement, and documentation in one project page.",
+      "Shows response behavior through a visual curve instead of only text.",
+      "Connects theory, measurement, and documentation in one reviewable project page.",
       "Good place to attach oscilloscope screenshots, MATLAB plots, and lab results.",
     ],
     docs: [
-      "Problem: understand how component values affect overshoot, damping, and settling time.",
+      "Problem: understand how system values affect overshoot, damping, and settling time.",
       "Method: compare expected response against measured or simulated response.",
       "Result: summarize error sources and explain what the curve proves.",
     ],
@@ -33,10 +33,10 @@ const projectDetails = {
     ],
   },
   embedded: {
-    type: "Embedded Systems",
-    title: "Microcontroller Control Prototype",
+    type: "Embedded Avionics",
+    title: "Microcontroller Control Loop",
     summary:
-      "Interactive project view for a sensor-to-actuator prototype with readable test notes and a repeatable control demo.",
+      "A focused project view for a sensor-to-output prototype with readable test notes and a repeatable control demo.",
     visual: "embedded",
     sim: "PWM output",
     overview: [
@@ -47,7 +47,7 @@ const projectDetails = {
     docs: [
       "Problem: read an input signal and produce a stable controlled output.",
       "Method: build firmware, test sensor ranges, log failures, and tune response.",
-      "Result: document repeatability, limitations, and next hardware improvements.",
+      "Result: document repeatability, limitations, and next hardware or firmware improvements.",
     ],
     assets: [
       "Prototype photo.",
@@ -56,7 +56,7 @@ const projectDetails = {
     ],
   },
   power: {
-    type: "Power Systems",
+    type: "Electrical Systems",
     title: "Power Distribution Concept",
     summary:
       "Interactive project view for load planning, branch layout, protection notes, and documentation of a small distribution concept.",
@@ -125,7 +125,7 @@ function drawSimulation(level = 5) {
   simCtx.fillStyle = "rgba(3, 5, 15, 0.65)";
   simCtx.fillRect(0, 0, width, height);
 
-  simCtx.strokeStyle = "rgba(77, 245, 255, 0.12)";
+  simCtx.strokeStyle = "rgba(248, 244, 236, 0.12)";
   simCtx.lineWidth = 1;
   for (let x = 0; x < width; x += 40) {
     simCtx.beginPath();
@@ -140,7 +140,7 @@ function drawSimulation(level = 5) {
     simCtx.stroke();
   }
 
-  simCtx.strokeStyle = activeProject.visual === "power" ? "#ffe66b" : activeProject.visual === "embedded" ? "#ff5ec4" : "#4df5ff";
+  simCtx.strokeStyle = activeProject.visual === "power" ? "#c9a86a" : activeProject.visual === "embedded" ? "#d8d0c2" : "#f8f4ec";
   simCtx.lineWidth = 3;
   simCtx.shadowBlur = 16;
   simCtx.shadowColor = simCtx.strokeStyle;
@@ -271,7 +271,7 @@ if (canvas) {
     for (let i = 0; i < 7; i += 1) {
       const y = (height / 8) * (i + 1);
       const pulse = (Math.sin(time * 0.0015 + i) + 1) / 2;
-      ctx.strokeStyle = `rgba(77, 245, 255, ${0.05 + pulse * 0.09})`;
+      ctx.strokeStyle = `rgba(248, 244, 236, ${0.035 + pulse * 0.06})`;
       ctx.beginPath();
       ctx.moveTo(0, y);
       ctx.lineTo(width * 0.22, y);
@@ -309,7 +309,7 @@ if (canvas) {
 
         if (distance < 132) {
           const opacity = (1 - distance / 132) * 0.24;
-          const color = a.rail === b.rail ? "77, 245, 255" : "255, 94, 196";
+          const color = a.rail === b.rail ? "248, 244, 236" : "201, 168, 106";
           ctx.strokeStyle = `rgba(${color}, ${opacity})`;
           ctx.lineWidth = 1;
           ctx.beginPath();
@@ -323,7 +323,7 @@ if (canvas) {
     particles.forEach((particle) => {
       const distanceToPointer = Math.hypot(particle.x - px, particle.y - py);
       const glow = Math.max(0, 1 - distanceToPointer / 240);
-      const color = particle.charge > 0 ? "77, 245, 255" : "255, 94, 196";
+      const color = particle.charge > 0 ? "248, 244, 236" : "201, 168, 106";
 
       ctx.fillStyle = `rgba(${color}, ${0.42 + glow * 0.5})`;
       ctx.beginPath();

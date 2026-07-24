@@ -1032,3 +1032,350 @@ h3 {
     scroll-behavior: auto !important;
   }
 }
+
+/* Aerospace premium direction */
+:root {
+  --bg: #090907;
+  --bg-2: #15130f;
+  --ink: #f8f4ec;
+  --muted: #b9b2a6;
+  --dim: #7c7468;
+  --line: rgba(248, 244, 236, 0.18);
+  --panel: rgba(18, 17, 14, 0.78);
+  --panel-strong: rgba(28, 26, 22, 0.94);
+  --cyan: #c9a86a;
+  --blue: #aeb7c2;
+  --violet: #d8d0c2;
+  --pink: #b58b4a;
+  --yellow: #e7d6b2;
+  --green: #d8d0c2;
+  --shadow: 0 32px 90px rgba(0, 0, 0, 0.42);
+}
+
+body {
+  background:
+    linear-gradient(90deg, rgba(248, 244, 236, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(248, 244, 236, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 78% 18%, rgba(201, 168, 106, 0.16), transparent 28rem),
+    radial-gradient(circle at 18% 38%, rgba(174, 183, 194, 0.12), transparent 24rem),
+    linear-gradient(180deg, #090907 0%, #15130f 48%, #0c0b09 100%);
+  background-size: 92px 92px, 92px 92px, auto, auto, auto;
+}
+
+body::before {
+  background:
+    linear-gradient(115deg, transparent 0 45%, rgba(248, 244, 236, 0.05) 45% 45.25%, transparent 45.25% 100%),
+    linear-gradient(180deg, rgba(9, 9, 7, 0) 0%, rgba(9, 9, 7, 0.94) 92%);
+}
+
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 34%),
+    repeating-linear-gradient(0deg, transparent 0 11px, rgba(248, 244, 236, 0.018) 11px 12px);
+  opacity: 0.75;
+}
+
+#field-canvas {
+  opacity: 0.52;
+}
+
+.site-header {
+  background: rgba(9, 9, 7, 0.78);
+}
+
+.brand-symbol,
+.button.primary,
+.project-open,
+.contact-links a,
+.modal-close,
+.detail-tab.is-active,
+.modal-actions a:first-child {
+  color: #100f0d;
+  background: linear-gradient(135deg, #f8f4ec, #c9a86a);
+  box-shadow: 0 16px 42px rgba(201, 168, 106, 0.16);
+}
+
+.brand-symbol {
+  border-radius: 999px;
+  font-family: "JetBrains Mono", Consolas, monospace;
+  letter-spacing: 0;
+}
+
+.brand-copy small,
+.site-nav a,
+.hero-text,
+.section-header > p,
+.project-card p:not(.project-type),
+.about-grid p,
+.skill-card p,
+.contact-section p,
+.modal-copy > p:not(.eyebrow),
+.detail-pane ul {
+  color: var(--muted);
+}
+
+.site-nav {
+  background: rgba(248, 244, 236, 0.045);
+  border-radius: 0.45rem;
+}
+
+.site-nav a {
+  border-radius: 0.3rem;
+}
+
+.site-nav a:hover {
+  color: #100f0d;
+  background: #f8f4ec;
+}
+
+.eyebrow,
+.project-type {
+  color: #c9a86a;
+}
+
+h1,
+h2,
+.project-visual strong {
+  font-family: "Urbanist", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 10.5ch;
+  font-size: clamp(3.7rem, 10vw, 8.4rem);
+  line-height: 0.88;
+  text-transform: none;
+}
+
+h1 span {
+  color: var(--ink);
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+
+h2 {
+  max-width: 13ch;
+  text-transform: none;
+}
+
+.button.secondary {
+  background: rgba(248, 244, 236, 0.055);
+  border-color: rgba(248, 244, 236, 0.24);
+}
+
+.aircraft-panel {
+  position: relative;
+  min-height: 34rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 58% 46%, rgba(201, 168, 106, 0.18), transparent 17rem),
+    linear-gradient(145deg, rgba(248, 244, 236, 0.105), rgba(248, 244, 236, 0.03)),
+    rgba(18, 17, 14, 0.72);
+  border: 1px solid rgba(248, 244, 236, 0.24);
+  border-radius: 0.55rem;
+  box-shadow: var(--shadow), inset 0 0 70px rgba(248, 244, 236, 0.045);
+}
+
+.aircraft-panel::before,
+.aircraft-panel::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.aircraft-panel::before {
+  inset: 1.2rem;
+  border: 1px solid rgba(248, 244, 236, 0.2);
+  clip-path: polygon(0 0, 82% 0, 100% 18%, 100% 100%, 14% 100%, 0 84%);
+}
+
+.aircraft-panel::after {
+  inset: 0;
+  background:
+    linear-gradient(118deg, transparent 0 46%, rgba(248, 244, 236, 0.12) 46% 46.35%, transparent 46.35% 100%),
+    linear-gradient(90deg, transparent 0 63%, rgba(201, 168, 106, 0.12) 63% 63.35%, transparent 63.35% 100%);
+}
+
+.jet-stage {
+  position: absolute;
+  inset: 0;
+}
+
+.wing-line,
+.fuselage-line,
+.flight-arc {
+  position: absolute;
+  display: block;
+}
+
+.fuselage-line {
+  top: 48%;
+  left: 11%;
+  width: 78%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f8f4ec, transparent);
+  box-shadow: 0 0 24px rgba(248, 244, 236, 0.2);
+}
+
+.wing-line {
+  top: 46%;
+  left: 21%;
+  width: 58%;
+  height: 10rem;
+  border-top: 2px solid rgba(201, 168, 106, 0.78);
+  border-left: 2px solid rgba(201, 168, 106, 0.44);
+  transform: skewX(-28deg) rotate(-7deg);
+}
+
+.flight-arc {
+  left: 18%;
+  top: 24%;
+  width: 64%;
+  aspect-ratio: 2.7;
+  border-top: 1px solid rgba(248, 244, 236, 0.32);
+  border-radius: 50%;
+}
+
+.flight-arc.two {
+  top: 34%;
+  left: 9%;
+  width: 82%;
+  border-color: rgba(201, 168, 106, 0.28);
+}
+
+.flight-node {
+  position: absolute;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: #c9a86a;
+  box-shadow: 0 0 22px rgba(201, 168, 106, 0.65);
+}
+
+.flight-node.nose {
+  top: 47%;
+  right: 10%;
+}
+
+.flight-node.tail {
+  top: 47%;
+  left: 13%;
+}
+
+.flight-node.avionics {
+  top: 41%;
+  left: 48%;
+  background: #f8f4ec;
+}
+
+.panel-readout span {
+  color: #f8f4ec;
+  background: rgba(9, 9, 7, 0.68);
+  border-color: rgba(248, 244, 236, 0.2);
+}
+
+.project-card,
+.skill-card,
+.about-grid p,
+.contact-section,
+.modal-panel,
+.detail-pane,
+.sim-panel {
+  background: linear-gradient(145deg, rgba(248, 244, 236, 0.095), rgba(248, 244, 236, 0.028));
+  border-color: rgba(248, 244, 236, 0.18);
+  border-radius: 0.45rem;
+}
+
+.project-card:hover {
+  border-color: rgba(201, 168, 106, 0.5);
+  box-shadow: 0 26px 90px rgba(201, 168, 106, 0.1);
+}
+
+.project-card.featured {
+  border-color: rgba(201, 168, 106, 0.38);
+}
+
+.project-visual,
+.detail-image {
+  background:
+    linear-gradient(118deg, rgba(248, 244, 236, 0.1), transparent 38%),
+    radial-gradient(circle at 52% 50%, rgba(201, 168, 106, 0.12), transparent 10rem),
+    rgba(9, 9, 7, 0.6);
+}
+
+.project-visual::before,
+.detail-image::before {
+  border-color: rgba(248, 244, 236, 0.22);
+}
+
+.project-visual::after,
+.detail-image::after {
+  background:
+    linear-gradient(90deg, transparent, rgba(248, 244, 236, 0.75), transparent) 0 50% / 100% 2px no-repeat,
+    linear-gradient(116deg, transparent 0 45%, rgba(201, 168, 106, 0.72) 45% 45.55%, transparent 45.55% 100%);
+  box-shadow: none;
+  filter: drop-shadow(0 0 16px rgba(201, 168, 106, 0.22));
+}
+
+.project-visual span,
+.detail-image span,
+.pulse-visual span,
+.power-visual span,
+.detail-image.embedded span,
+.detail-image.power span {
+  background: #c9a86a;
+  box-shadow: 0 0 20px rgba(201, 168, 106, 0.52);
+}
+
+.project-visual strong {
+  color: #f8f4ec;
+  font-size: 1.35rem;
+  text-shadow: 0 0 22px rgba(201, 168, 106, 0.22);
+}
+
+.tag-list li {
+  color: #f8f4ec;
+  background: rgba(248, 244, 236, 0.06);
+  border-color: rgba(248, 244, 236, 0.18);
+}
+
+.skill-card span {
+  color: #c9a86a;
+}
+
+.modal-backdrop {
+  background: rgba(7, 7, 6, 0.82);
+}
+
+.modal-panel {
+  background:
+    radial-gradient(circle at 22% 10%, rgba(201, 168, 106, 0.14), transparent 22rem),
+    radial-gradient(circle at 82% 16%, rgba(248, 244, 236, 0.08), transparent 22rem),
+    rgba(15, 14, 12, 0.96);
+  border-color: rgba(248, 244, 236, 0.24);
+}
+
+#sim-canvas {
+  background: rgba(9, 9, 7, 0.52);
+  border-color: rgba(248, 244, 236, 0.18);
+}
+
+.modal-actions a {
+  border-radius: 0.35rem;
+}
+
+@media (max-width: 980px) {
+  .aircraft-panel {
+    min-height: 28rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .aircraft-panel {
+    min-height: 23rem;
+  }
+}
