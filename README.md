@@ -1,7 +1,7 @@
-# Mohamed Marou Belko - Aerospace Electrical Portfolio
+# Mohamed Marou Belko - Electrical Engineering Portfolio
 
-This repository contains a static aerospace-inspired electrical engineering
-portfolio built for GitHub Pages.
+This repository contains a static electrical engineering portfolio built for
+GitHub Pages.
 
 ## Sections
 
@@ -26,9 +26,9 @@ For each project, include:
 Update the contact links in the `#contact` section with your real LinkedIn,
 email, resume, and GitHub URLs.
 
-The visual theme is driven by `styles.css` and `script.js`: premium aerospace
-colors, aircraft-inspired system visuals, interactive project modals, and a
-subtle animated instrument-field canvas.
+The visual theme is driven by `styles.css` and `script.js`: electrical colors,
+circuit-inspired system visuals, interactive project modals, and an animated
+electrical field canvas.
 
 ## Run locally
 
