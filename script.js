@@ -8,78 +8,80 @@ const closeProjectButtons = document.querySelectorAll("[data-close-project]");
 const detailTabs = document.querySelectorAll(".detail-tab");
 const simSlider = document.querySelector("#sim-slider");
 const simCanvas = document.querySelector("#sim-canvas");
+
 const projectDetails = {
-  plc: {
-    type: "Automatisation industrielle",
-    title: "PLC Schneider Modicon M340",
+  motor: {
+    type: "Automation | Motor control",
+    title: "Industrial Motor Control Panel",
     summary:
-      "Fiche interactive sur une architecture d'automatisation industrielle : logique de séquence, capteurs, actionneurs, HMI/SCADA, essais et documentation.",
+      "Mini case study for a PLC-controlled motor cabinet used on a manufacturing line, with emphasis on safe sequence logic, I/O mapping, test procedure and maintainable documentation.",
     visual: "plc",
-    sim: "Séquence PLC",
+    sim: "PLC sequence",
     overview: [
-      "Montre la logique de contrôle comme une chaîne d'états plutôt qu'une simple description texte.",
-      "Relie les entrées capteurs, sorties actionneurs, HMI/SCADA et documentation d'essais.",
-      "Prépare l'ajout de captures HMI, ladder diagrams, tableaux d'E/S et rapports d'essais.",
+      "Objective: design a motor control sequence for start, stop, fault handling and operator feedback.",
+      "Responsibilities: electrical schematics, I/O list, PLC sequence logic, HMI status points and test checklist.",
+      "Constraints: safety interlocks, production continuity, readable troubleshooting and clear commissioning notes.",
     ],
     docs: [
-      "Problème : structurer une séquence automatisée fiable et lisible.",
-      "Méthode : décomposer le comportement en états, transitions, capteurs, actionneurs et conditions de sécurité.",
-      "Résultat : documentation prête pour revue technique et validation terrain.",
+      "Software: Schneider PLC tools, HMI/SCADA concepts, Excel I/O tracking and technical reports.",
+      "Engineering result: sequence structured into states and transitions for easier debugging and handover.",
+      "Target metric: reduce troubleshooting time by documenting every input, output, alarm and permissive condition.",
     ],
     assets: [
-      "Capture ladder/FBD/SFC.",
-      "Table d'E/S et schéma de séquence.",
-      "Rapport d'essais ou vidéo HMI/SCADA.",
+      "Panel photo, control schematic, I/O table and PLC sequence diagram.",
+      "Commissioning checklist with start/stop, fault reset and safety validation.",
+      "Short screen recording of HMI status and motor sequence simulation.",
     ],
   },
   hotswap: {
-    type: "Alimentation redondante",
-    title: "L3 MAPPS - Hot-Swap Power Supply",
+    type: "Power electronics | Reliability",
+    title: "Redundant Hot-Swap Power Supply",
     summary:
-      "Fiche interactive sur la conception et l'analyse d'une alimentation redondante remplaçable à chaud avec contraintes de fiabilité, protection et maintenabilité.",
+      "Engineering file for a removable redundant power supply with service continuity, protection, maintainability and validation constraints.",
     visual: "power",
-    sim: "Profil de charge",
+    sim: "Load profile",
     overview: [
-      "Montre la continuité d'alimentation et la réponse à la variation de charge.",
-      "Présente les contraintes de protection, fiabilité, validation et maintenance.",
-      "Prépare l'ajout de schémas, hypothèses, calculs et captures de validation.",
+      "Objective: maintain load supply during source replacement or source fault.",
+      "Responsibilities: block diagram, operating modes, failure cases, protection assumptions and validation plan.",
+      "Constraints: reliability, thermal behavior, maintainability, protection coordination and service continuity.",
     ],
     docs: [
-      "Problème : maintenir le service pendant le remplacement ou la défaillance d'une source.",
-      "Méthode : analyser les chemins d'alimentation, protections, contraintes thermiques et validation.",
-      "Résultat : architecture documentée pour discussion technique et revue de conception.",
+      "Software: LTspice/EasyEDA concepts, Excel calculations, MATLAB plots and structured documentation.",
+      "Engineering result: clarified power paths, protection needs and test cases before physical implementation.",
+      "Target metric: validate continuity of service under load steps and source transfer events.",
     ],
     assets: [
-      "Schéma électrique ou bloc diagramme.",
-      "Calculs de charge/protection.",
-      "Rapport de validation et contraintes de fiabilité.",
+      "Electrical block diagram and power path diagram.",
+      "Load table, protection assumptions and thermal notes.",
+      "Simulation capture, validation report and design review notes.",
     ],
   },
-  odroid: {
-    type: "Système embarqué",
-    title: "ELE4205 - Système Odroid-C2",
+  distribution: {
+    type: "Power systems | Electrical design",
+    title: "480V Distribution Study",
     summary:
-      "Fiche interactive sur un système embarqué C++ avec communication TCP/IP, OpenCV, caméra USB, ZBar/QR Code, GPIO, Docker, Yocto, CMake et documentation Doxygen.",
-    visual: "embedded",
-    sim: "Flux embarqué",
+      "Recruiter-style design study for a low-voltage distribution concept including load calculation, feeder sizing, protective device selection and documentation package.",
+    visual: "distribution",
+    sim: "Load demand",
     overview: [
-      "Montre le flux entre capteur, traitement, communication réseau et sortie système.",
-      "Relie bas niveau, vision ordinateur, Linux embarqué et documentation technique.",
-      "Prépare l'ajout de captures OpenCV, schémas d'architecture et dépôt de code.",
+      "Objective: prepare a 480V distribution concept for industrial or commercial loads.",
+      "Responsibilities: load list, demand estimate, feeder sizing, single-line diagram and protection notes.",
+      "Constraints: safety, voltage level, maintainability, expansion capacity and code-aware documentation.",
     ],
     docs: [
-      "Problème : intégrer vision, communication et logique embarquée dans un système cohérent.",
-      "Méthode : structurer les modules C++, réseau, traitement image, GPIO et documentation.",
-      "Résultat : prototype explicable avec architecture, tests et traces de débogage.",
+      "Software: AutoCAD Electrical target workflow, Excel calculation sheet, ETAP/EasyPower/SKM readiness.",
+      "Engineering result: design package structure ready for review by a senior electrical engineer.",
+      "Target metric: size feeders up to 600A and document assumptions for 250 kW-class installations.",
     ],
     assets: [
-      "Capture OpenCV ou QR/ZBar.",
-      "Diagramme d'architecture logicielle.",
-      "Dépôt GitHub, Doxygen ou rapport de projet.",
+      "Single-line diagram, panel schedule and load calculation table.",
+      "Protection device notes and grounding assumptions.",
+      "PDF calculation package and drawing export.",
     ],
   },
 };
-let activeProject = projectDetails.plc;
+
+let activeProject = projectDetails.motor;
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -140,7 +142,7 @@ function drawSimulation(level = 5) {
     simCtx.stroke();
   }
 
-  simCtx.strokeStyle = activeProject.visual === "power" ? "#ffe66b" : activeProject.visual === "embedded" ? "#ff5ec4" : "#4df5ff";
+  simCtx.strokeStyle = activeProject.visual === "power" ? "#ffb020" : activeProject.visual === "distribution" ? "#7da7ff" : "#4df5ff";
   simCtx.lineWidth = 3;
   simCtx.shadowBlur = 16;
   simCtx.shadowColor = simCtx.strokeStyle;
@@ -153,11 +155,10 @@ function drawSimulation(level = 5) {
     if (activeProject.visual === "plc") {
       const phase = Math.floor(t * (4 + strength * 0.4)) % 2;
       y = phase === 0 ? mid - 48 : mid + 42;
-    } else if (activeProject.visual === "embedded") {
-      const duty = 0.18 + strength * 0.065;
-      y = t % 0.16 < duty * 0.16 ? mid - 58 : mid + 46;
     } else if (activeProject.visual === "power") {
       y = mid - Math.sin(t * Math.PI) * (strength * 8) - Math.sin(t * Math.PI * 6) * 8;
+    } else if (activeProject.visual === "distribution") {
+      y = mid - 18 - Math.sin(t * Math.PI * 2) * (18 + strength * 3) - Math.sin(t * Math.PI * 9) * 5;
     } else {
       y = mid + Math.sin(t * Math.PI * (5 + strength * 0.3)) * Math.exp(-t * (1.4 + strength * 0.22)) * (40 + strength * 8);
     }
@@ -178,7 +179,7 @@ function drawSimulation(level = 5) {
 }
 
 function openProject(projectId) {
-  activeProject = projectDetails[projectId] || projectDetails.plc;
+  activeProject = projectDetails[projectId] || projectDetails.motor;
 
   document.querySelector("#modal-type").textContent = activeProject.type;
   document.querySelector("#modal-title").textContent = activeProject.title;
@@ -246,11 +247,11 @@ if (canvas) {
     return {
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.35,
-      vy: (Math.random() - 0.5) * 0.35,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25,
       rail,
       charge: Math.random() > 0.5 ? 1 : -1,
-      size: 1 + Math.random() * 2.4,
+      size: 1 + Math.random() * 2,
     };
   }
 
@@ -264,17 +265,17 @@ if (canvas) {
     canvas.style.height = `${height}px`;
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
 
-    const count = Math.max(34, Math.min(92, Math.floor((width * height) / 15000)));
+    const count = Math.max(26, Math.min(70, Math.floor((width * height) / 19000)));
     particles = Array.from({ length: count }, (_, index) => makeParticle(index));
   }
 
   function drawCircuitRails(time) {
     ctx.lineWidth = 1;
 
-    for (let i = 0; i < 7; i += 1) {
-      const y = (height / 8) * (i + 1);
-      const pulse = (Math.sin(time * 0.0015 + i) + 1) / 2;
-      ctx.strokeStyle = `rgba(77, 245, 255, ${0.05 + pulse * 0.09})`;
+    for (let i = 0; i < 6; i += 1) {
+      const y = (height / 7) * (i + 1);
+      const pulse = (Math.sin(time * 0.0012 + i) + 1) / 2;
+      ctx.strokeStyle = `rgba(77, 245, 255, ${0.04 + pulse * 0.07})`;
       ctx.beginPath();
       ctx.moveTo(0, y);
       ctx.lineTo(width * 0.22, y);
@@ -293,7 +294,7 @@ if (canvas) {
 
     particles.forEach((particle) => {
       if (!prefersReducedMotion) {
-        const pull = particle.charge * 0.00006;
+        const pull = particle.charge * 0.000045;
         particle.x += particle.vx + (px - particle.x) * pull;
         particle.y += particle.vy + (py - particle.y) * pull;
       }
@@ -310,9 +311,9 @@ if (canvas) {
         const b = particles[j];
         const distance = Math.hypot(a.x - b.x, a.y - b.y);
 
-        if (distance < 132) {
-          const opacity = (1 - distance / 132) * 0.24;
-          const color = a.rail === b.rail ? "77, 245, 255" : "255, 94, 196";
+        if (distance < 120) {
+          const opacity = (1 - distance / 120) * 0.18;
+          const color = a.rail === b.rail ? "77, 245, 255" : "255, 176, 32";
           ctx.strokeStyle = `rgba(${color}, ${opacity})`;
           ctx.lineWidth = 1;
           ctx.beginPath();
@@ -326,11 +327,11 @@ if (canvas) {
     particles.forEach((particle) => {
       const distanceToPointer = Math.hypot(particle.x - px, particle.y - py);
       const glow = Math.max(0, 1 - distanceToPointer / 240);
-      const color = particle.charge > 0 ? "77, 245, 255" : "255, 94, 196";
+      const color = particle.charge > 0 ? "77, 245, 255" : "255, 176, 32";
 
-      ctx.fillStyle = `rgba(${color}, ${0.42 + glow * 0.5})`;
+      ctx.fillStyle = `rgba(${color}, ${0.36 + glow * 0.45})`;
       ctx.beginPath();
-      ctx.arc(particle.x, particle.y, particle.size + glow * 2.8, 0, Math.PI * 2);
+      ctx.arc(particle.x, particle.y, particle.size + glow * 2.2, 0, Math.PI * 2);
       ctx.fill();
     });
 

@@ -5,29 +5,33 @@ GitHub Pages.
 
 ## Sections
 
-- Accueil interactif avec hub electrique
-- Sommaire
-- Competences techniques
-- Experience professionnelle
-- Projets techniques majeurs
-- Formation
-- Qualites et interets
-- Contact
+- Recruiter-focused hero
+- About
+- Technical skills by engineering domain
+- Engineering projects as mini case studies
+- Engineering process
+- Timeline
+- Certifications and readiness
+- Engineering gallery
+- Reports and publications
+- Contact and resume PDF
 
 ## How to customize
 
 Edit `index.html` to update the CV content, project cards, links, and contact
 information. For each project, include:
 
-- the problem
-- your approach
-- tools used
+- objective
+- responsibilities
+- software
 - measurable result
-- GitHub, PDF, report, or demo link
+- gallery assets
+- report, drawing, simulation, or demo link
 
 The visual theme is driven by `styles.css` and `script.js`: dark electrical
-colors, blue and violet network paths, an isometric homepage hub, interactive
-project modals, and animated project simulations.
+engineering colors, steel accents, orange highlights, an isometric homepage
+hub, interactive project modals, and animated project simulations. The resume
+PDF is stored in `assets/`.
 
 ## Run locally
 
