@@ -5,17 +5,19 @@ GitHub Pages.
 
 ## Sections
 
-- Projects
-- About Me
-- What Defines Me
-- Skills
-- Experience
+- Accueil interactif avec hub electrique
+- Sommaire
+- Competences techniques
+- Experience professionnelle
+- Projets techniques majeurs
+- Formation
+- Qualites et interets
 - Contact
 
 ## How to customize
 
-Edit `index.html` to replace the project cards with real projects.
-For each project, include:
+Edit `index.html` to update the CV content, project cards, links, and contact
+information. For each project, include:
 
 - the problem
 - your approach
@@ -23,12 +25,9 @@ For each project, include:
 - measurable result
 - GitHub, PDF, report, or demo link
 
-Update the contact links in the `#contact` section with your real LinkedIn,
-email, resume, and GitHub URLs.
-
-The visual theme is driven by `styles.css` and `script.js`: electrical colors,
-circuit-inspired system visuals, interactive project modals, and an animated
-electrical field canvas.
+The visual theme is driven by `styles.css` and `script.js`: dark electrical
+colors, blue and violet network paths, an isometric homepage hub, interactive
+project modals, and animated project simulations.
 
 ## Run locally
 

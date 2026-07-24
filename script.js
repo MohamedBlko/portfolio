@@ -9,77 +9,77 @@ const detailTabs = document.querySelectorAll(".detail-tab");
 const simSlider = document.querySelector("#sim-slider");
 const simCanvas = document.querySelector("#sim-canvas");
 const projectDetails = {
-  rlc: {
-    type: "Signal Integrity",
-    title: "Transient Response Study",
+  plc: {
+    type: "Automatisation industrielle",
+    title: "PLC Schneider Modicon M340",
     summary:
-      "A compact technical brief for modeling, measuring, and explaining transient response as a system-stability signal.",
-    visual: "rlc",
-    sim: "Damped waveform",
+      "Fiche interactive sur une architecture d'automatisation industrielle : logique de séquence, capteurs, actionneurs, HMI/SCADA, essais et documentation.",
+    visual: "plc",
+    sim: "Séquence PLC",
     overview: [
-      "Shows response behavior through a visual curve instead of only text.",
-      "Connects theory, measurement, and documentation in one reviewable project page.",
-      "Good place to attach oscilloscope screenshots, MATLAB plots, and lab results.",
+      "Montre la logique de contrôle comme une chaîne d'états plutôt qu'une simple description texte.",
+      "Relie les entrées capteurs, sorties actionneurs, HMI/SCADA et documentation d'essais.",
+      "Prépare l'ajout de captures HMI, ladder diagrams, tableaux d'E/S et rapports d'essais.",
     ],
     docs: [
-      "Problem: understand how system values affect overshoot, damping, and settling time.",
-      "Method: compare expected response against measured or simulated response.",
-      "Result: summarize error sources and explain what the curve proves.",
+      "Problème : structurer une séquence automatisée fiable et lisible.",
+      "Méthode : décomposer le comportement en états, transitions, capteurs, actionneurs et conditions de sécurité.",
+      "Résultat : documentation prête pour revue technique et validation terrain.",
     ],
     assets: [
-      "Circuit photo or breadboard image.",
-      "Oscilloscope capture.",
-      "PDF lab report or MATLAB notebook.",
+      "Capture ladder/FBD/SFC.",
+      "Table d'E/S et schéma de séquence.",
+      "Rapport d'essais ou vidéo HMI/SCADA.",
     ],
   },
-  embedded: {
-    type: "Embedded Systems",
-    title: "Microcontroller Control Loop",
+  hotswap: {
+    type: "Alimentation redondante",
+    title: "L3 MAPPS - Hot-Swap Power Supply",
     summary:
-      "A focused project view for a sensor-to-output prototype with readable test notes and a repeatable control demo.",
-    visual: "embedded",
-    sim: "PWM output",
-    overview: [
-      "Shows sensor input, control output, debugging workflow, and test procedure.",
-      "Makes the project feel hands-on by giving visitors a simple control knob.",
-      "Good place to add prototype photos, wiring diagrams, and source code links.",
-    ],
-    docs: [
-      "Problem: read an input signal and produce a stable controlled output.",
-      "Method: build firmware, test sensor ranges, log failures, and tune response.",
-      "Result: document repeatability, limitations, and next hardware or firmware improvements.",
-    ],
-    assets: [
-      "Prototype photo.",
-      "Wiring diagram.",
-      "GitHub repository with firmware.",
-    ],
-  },
-  power: {
-    type: "Electrical Systems",
-    title: "Power Distribution Concept",
-    summary:
-      "Interactive project view for load planning, branch layout, protection notes, and documentation of a small distribution concept.",
+      "Fiche interactive sur la conception et l'analyse d'une alimentation redondante remplaçable à chaud avec contraintes de fiabilité, protection et maintenabilité.",
     visual: "power",
-    sim: "Load profile",
+    sim: "Profil de charge",
     overview: [
-      "Shows system thinking, not only a static drawing.",
-      "Presents load groups, constraints, and documentation notes in a recruiter-friendly format.",
-      "Good place to attach AutoCAD Electrical drawings or a PDF design package.",
+      "Montre la continuité d'alimentation et la réponse à la variation de charge.",
+      "Présente les contraintes de protection, fiabilité, validation et maintenance.",
+      "Prépare l'ajout de schémas, hypothèses, calculs et captures de validation.",
     ],
     docs: [
-      "Problem: plan a simple distribution layout with loads, constraints, and safe organization.",
-      "Method: group loads, label branches, identify protection notes, and document assumptions.",
-      "Result: communicate a concept clearly enough for review and iteration.",
+      "Problème : maintenir le service pendant le remplacement ou la défaillance d'une source.",
+      "Méthode : analyser les chemins d'alimentation, protections, contraintes thermiques et validation.",
+      "Résultat : architecture documentée pour discussion technique et revue de conception.",
     ],
     assets: [
-      "Single-line diagram.",
-      "Load table.",
-      "AutoCAD Electrical export or PDF report.",
+      "Schéma électrique ou bloc diagramme.",
+      "Calculs de charge/protection.",
+      "Rapport de validation et contraintes de fiabilité.",
+    ],
+  },
+  odroid: {
+    type: "Système embarqué",
+    title: "ELE4205 - Système Odroid-C2",
+    summary:
+      "Fiche interactive sur un système embarqué C++ avec communication TCP/IP, OpenCV, caméra USB, ZBar/QR Code, GPIO, Docker, Yocto, CMake et documentation Doxygen.",
+    visual: "embedded",
+    sim: "Flux embarqué",
+    overview: [
+      "Montre le flux entre capteur, traitement, communication réseau et sortie système.",
+      "Relie bas niveau, vision ordinateur, Linux embarqué et documentation technique.",
+      "Prépare l'ajout de captures OpenCV, schémas d'architecture et dépôt de code.",
+    ],
+    docs: [
+      "Problème : intégrer vision, communication et logique embarquée dans un système cohérent.",
+      "Méthode : structurer les modules C++, réseau, traitement image, GPIO et documentation.",
+      "Résultat : prototype explicable avec architecture, tests et traces de débogage.",
+    ],
+    assets: [
+      "Capture OpenCV ou QR/ZBar.",
+      "Diagramme d'architecture logicielle.",
+      "Dépôt GitHub, Doxygen ou rapport de projet.",
     ],
   },
 };
-let activeProject = projectDetails.rlc;
+let activeProject = projectDetails.plc;
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -150,7 +150,10 @@ function drawSimulation(level = 5) {
     const t = x / width;
     let y;
 
-    if (activeProject.visual === "embedded") {
+    if (activeProject.visual === "plc") {
+      const phase = Math.floor(t * (4 + strength * 0.4)) % 2;
+      y = phase === 0 ? mid - 48 : mid + 42;
+    } else if (activeProject.visual === "embedded") {
       const duty = 0.18 + strength * 0.065;
       y = t % 0.16 < duty * 0.16 ? mid - 58 : mid + 46;
     } else if (activeProject.visual === "power") {
@@ -175,7 +178,7 @@ function drawSimulation(level = 5) {
 }
 
 function openProject(projectId) {
-  activeProject = projectDetails[projectId] || projectDetails.rlc;
+  activeProject = projectDetails[projectId] || projectDetails.plc;
 
   document.querySelector("#modal-type").textContent = activeProject.type;
   document.querySelector("#modal-title").textContent = activeProject.title;
