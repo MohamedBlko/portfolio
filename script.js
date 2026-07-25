@@ -181,6 +181,8 @@ function drawSimulation(level = 5) {
 }
 
 function openProject(projectId) {
+  if (!projectModal) return;
+
   activeProject = projectDetails[projectId] || projectDetails.motor;
 
   document.querySelector("#modal-type").textContent = activeProject.type;
@@ -189,7 +191,9 @@ function openProject(projectId) {
   document.querySelector("#sim-title").textContent = activeProject.sim;
 
   const image = document.querySelector("#detail-image");
-  image.className = `detail-image ${activeProject.visual}`;
+  if (image) {
+    image.className = `detail-image ${activeProject.visual}`;
+  }
 
   setList("#modal-overview", activeProject.overview);
   setList("#modal-docs", activeProject.docs);

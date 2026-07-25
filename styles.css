@@ -198,6 +198,34 @@ a {
   margin: 0 auto;
 }
 
+.page-main {
+  min-height: calc(100vh - 78px);
+}
+
+.page-hero {
+  padding-top: clamp(5rem, 8vw, 8rem);
+}
+
+.page-hero .section-header {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.page-hero .section-header > p {
+  max-width: 64rem;
+}
+
+.page-title {
+  max-width: 16ch;
+  margin: 0;
+  font-family: "Orbitron", "Urbanist", Arial, sans-serif;
+  font-size: clamp(2.2rem, 5.6vw, 4.8rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
 .hero {
   display: grid;
   min-height: calc(100vh - 78px);

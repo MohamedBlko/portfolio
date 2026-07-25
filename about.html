@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About Mohamed Marou Belko, electrical engineer in training in Montreal.">
+    <title>About | Mohamed Marou Belko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Urbanist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="field-canvas" aria-hidden="true"></canvas>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Mohamed Marou Belko home">
+        <span class="brand-symbol">MB</span>
+        <span class="brand-copy"><strong>Mohamed Marou Belko</strong><small>Electrical Engineer in Training</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="section page-hero about-section" aria-labelledby="about-title">
+        <div class="section-header">
+          <p class="eyebrow">About</p>
+          <h1 id="about-title" class="page-title">Engineer first. Practical, analytical, field-aware.</h1>
+          <p>
+            Electrical engineer in training passionate about power systems, electrical design,
+            industrial automation and reliable technical documentation. I enjoy solving engineering
+            problems with calculations, simulation, structured testing and clear deliverables.
+          </p>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-photo" aria-label="Professional photo placeholder"><span>MB</span></div>
+          <div class="profile-facts">
+            <article><span>Degree</span><strong>B.Eng. Electrical Engineering</strong><p>Polytechnique Montreal, expected 2026.</p></article>
+            <article><span>Location</span><strong>Montreal, Quebec</strong><p>Available for junior engineer, CPI/EIT, automation and electrical design roles.</p></article>
+            <article><span>Languages</span><strong>French | English</strong><p>Japanese in progress.</p></article>
+            <article><span>Mobility</span><strong>Class 5 driver license</strong><p>Open to site visits, field work and client-facing technical work.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><p>Phone: (438) 878-0897 | Email: mohamed_belko@outlook.com | LinkedIn: mohamed-belko-857b651a1</p><p>&copy; <span id="year"></span> Mohamed Marou Belko.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Electrical engineering technical skills for Mohamed Marou Belko.">
+    <title>Skills | Mohamed Marou Belko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Urbanist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="field-canvas" aria-hidden="true"></canvas>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Mohamed Marou Belko home"><span class="brand-symbol">MB</span><span class="brand-copy"><strong>Mohamed Marou Belko</strong><small>Electrical Engineer in Training</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a></nav>
+    </header>
+    <main class="page-main">
+      <section class="section page-hero" aria-labelledby="skills-title">
+        <div class="section-header">
+          <p class="eyebrow">Technical skills</p>
+          <h1 id="skills-title" class="page-title">Organized around electrical engineering work.</h1>
+          <p>Recruiters should see the core domains immediately: design, distribution, protection, automation, software tools and standards.</p>
+        </div>
+        <div class="skill-category-grid">
+          <article class="skill-category"><span>01</span><h3>Electrical Design</h3><ul><li>Power distribution</li><li>Protection and control</li><li>Motor control</li><li>Grounding and electrical safety</li><li>Load calculations and cable sizing</li></ul></article>
+          <article class="skill-category"><span>02</span><h3>Industrial Automation</h3><ul><li>PLC programming</li><li>HMI / SCADA</li><li>Instrumentation</li><li>Sequence logic</li><li>Commissioning tests</li></ul></article>
+          <article class="skill-category"><span>03</span><h3>Energy Systems</h3><ul><li>Renewable energy concepts</li><li>Power electronics</li><li>Redundant power supply</li><li>Industrial maintenance reliability</li><li>Electrical machines</li></ul></article>
+          <article class="skill-category"><span>04</span><h3>Embedded Systems</h3><ul><li>C/C++ firmware</li><li>STM32 / ESP32 / Odroid-C2</li><li>GPIO, timers and interrupts</li><li>TCP/IP and Linux embedded</li><li>OpenCV and sensor integration</li></ul></article>
+        </div>
+        <div class="software-board" aria-label="Engineering software levels">
+          <article>
+            <h3>Software</h3>
+            <div class="level"><span>Excel / VBA</span><meter min="0" max="100" value="90">90%</meter></div>
+            <div class="level"><span>MATLAB / Simulink</span><meter min="0" max="100" value="82">82%</meter></div>
+            <div class="level"><span>PLC Schneider</span><meter min="0" max="100" value="78">78%</meter></div>
+            <div class="level"><span>AutoCAD / EasyEDA / LTspice</span><meter min="0" max="100" value="72">72%</meter></div>
+            <div class="level"><span>Python / C / C++</span><meter min="0" max="100" value="80">80%</meter></div>
+          </article>
+          <article><h3>Standards and Methods</h3><ul class="standard-list"><li>IEC</li><li>IEEE</li><li>CSA</li><li>CEC</li><li>NFPA 70 awareness</li><li>SysML / MBSE</li></ul></article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><p>Phone: (438) 878-0897 | Email: mohamed_belko@outlook.com | LinkedIn: mohamed-belko-857b651a1</p><p>&copy; <span id="year"></span> Mohamed Marou Belko.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,20 +1,17 @@
 # Mohamed Marou Belko - Electrical Engineering Portfolio
 
-This repository contains a static electrical engineering portfolio built for
-GitHub Pages.
+This repository contains a multi-page static electrical engineering portfolio
+built for GitHub Pages.
 
 ## Sections
 
-- Recruiter-focused hero
-- About
-- Technical skills by engineering domain
-- Engineering projects as mini case studies
-- Engineering process
-- Timeline
-- Certifications and readiness
-- Engineering gallery
-- Reports and publications
-- Contact and resume PDF
+- `index.html` - recruiter-focused 3D homepage
+- `about.html` - profile, degree, location, languages, mobility
+- `skills.html` - technical skills by engineering domain
+- `projects.html` - interactive engineering case studies
+- `process.html` - engineering workflow
+- `timeline.html` - experience, education and readiness
+- `contact.html` - contact links, resume, gallery and reports
 
 ## How to customize
 

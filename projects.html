@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Electrical engineering projects and case studies by Mohamed Marou Belko.">
+    <title>Projects | Mohamed Marou Belko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Urbanist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="field-canvas" aria-hidden="true"></canvas>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Mohamed Marou Belko home"><span class="brand-symbol">MB</span><span class="brand-copy"><strong>Mohamed Marou Belko</strong><small>Electrical Engineer in Training</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a></nav>
+    </header>
+    <main class="page-main">
+      <section class="section page-hero" aria-labelledby="projects-title">
+        <div class="section-header">
+          <p class="eyebrow">Engineering projects</p>
+          <h1 id="projects-title" class="page-title">Mini case studies with objective, work, tools and results.</h1>
+          <p>Each project is structured like a recruiter-friendly engineering file: objective, responsibilities, software, results, gallery and documentation.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured"><div class="project-visual circuit-visual"><span></span><span></span><span></span><strong>Industrial PLC</strong></div><div class="project-content"><p class="project-type">Automation | Control cabinet logic</p><h3>Industrial Motor Control Panel</h3><p>Design a PLC-controlled motor sequence for a manufacturing line with safe start/stop logic, I/O mapping and test documentation.</p><ul class="tag-list"><li>Schneider PLC</li><li>HMI/SCADA</li><li>Motor control</li></ul><button class="project-open" type="button" data-project="motor">Open case study</button></div></article>
+          <article class="project-card"><div class="project-visual power-visual"><span></span><span></span><span></span><strong>Hot Swap Power</strong></div><div class="project-content"><p class="project-type">Power electronics | Reliability</p><h3>Redundant Hot-Swap Power Supply</h3><p>Analyze a removable redundant supply for continuity of service, protection, maintainability and validation constraints.</p><ul class="tag-list"><li>Redundancy</li><li>Protection</li><li>Reliability</li></ul><button class="project-open" type="button" data-project="hotswap">Open case study</button></div></article>
+          <article class="project-card"><div class="project-visual grid-visual"><span></span><span></span><span></span><strong>Distribution</strong></div><div class="project-content"><p class="project-type">Power systems | Electrical design</p><h3>480V Distribution Study</h3><p>Prepare a distribution concept with load calculation, feeder sizing, protective device selection and documentation package.</p><ul class="tag-list"><li>480V</li><li>600A feeders</li><li>Protection</li></ul><button class="project-open" type="button" data-project="distribution">Open case study</button></div></article>
+        </div>
+        <div class="project-list">
+          <a href="contact.html">Automated hoist control</a><a href="contact.html">STM32 low-level firmware</a><a href="contact.html">ESP32 / RFID / OLED interface</a><a href="contact.html">Sensor-based shoe measurement</a><a href="contact.html">Qt kiosk navigator</a><a href="contact.html">MATLAB signal analysis</a><a href="contact.html">MBSE / SysML documentation</a>
+        </div>
+      </section>
+    </main>
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-project></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close-project aria-label="Close project">Close</button>
+        <div class="modal-grid">
+          <div class="modal-visual"><div class="detail-image" id="detail-image" aria-label="Project visual preview"><span></span><span></span><span></span></div><div class="sim-panel"><div><p class="project-type">Simulation</p><h3 id="sim-title">Engineering response</h3></div><label>Input level<input id="sim-slider" type="range" min="1" max="10" value="5"></label><canvas id="sim-canvas" width="640" height="260" aria-label="Project simulation canvas"></canvas></div></div>
+          <div class="modal-copy"><p class="eyebrow" id="modal-type">Project</p><h2 id="modal-title">Project title</h2><p id="modal-summary"></p><div class="detail-tabs" role="tablist" aria-label="Project details"><button class="detail-tab is-active" type="button" data-tab="overview">Case Study</button><button class="detail-tab" type="button" data-tab="docs">Engineering Notes</button><button class="detail-tab" type="button" data-tab="next">Gallery / Docs</button></div><div class="detail-pane is-active" data-pane="overview"><h3>Objective and responsibilities</h3><ul id="modal-overview"></ul></div><div class="detail-pane" data-pane="docs"><h3>Software and results</h3><ul id="modal-docs"></ul></div><div class="detail-pane" data-pane="next"><h3>Evidence to attach</h3><ul id="modal-assets"></ul></div><div class="modal-actions"><a id="modal-report" href="assets/CV_Mohamed_Marou_Belko_Generic.pdf">Resume PDF</a><a id="modal-github" href="contact.html">Request details</a></div></div>
+        </div>
+      </section>
+    </div>
+    <footer class="site-footer"><p>Phone: (438) 878-0897 | Email: mohamed_belko@outlook.com | LinkedIn: mohamed-belko-857b651a1</p><p>&copy; <span id="year"></span> Mohamed Marou Belko.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
