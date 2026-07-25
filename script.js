@@ -2,6 +2,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const year = document.querySelector("#year");
 const canvas = document.querySelector("#field-canvas");
+const hero3dCanvas = document.querySelector("#hero-3d-canvas");
 const projectModal = document.querySelector("#project-modal");
 const projectButtons = document.querySelectorAll(".project-open");
 const closeProjectButtons = document.querySelectorAll("[data-close-project]");
@@ -82,6 +83,7 @@ const projectDetails = {
 };
 
 let activeProject = projectDetails.motor;
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -232,6 +234,195 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
+async function initHero3d() {
+  if (!hero3dCanvas) return;
+
+  try {
+    const THREE = await import("https://unpkg.com/three@0.160.0/build/three.module.js");
+    const panel = hero3dCanvas.closest(".hub-panel");
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
+    const renderer = new THREE.WebGLRenderer({
+      canvas: hero3dCanvas,
+      antialias: true,
+      alpha: true,
+      powerPreference: "high-performance",
+    });
+    const group = new THREE.Group();
+    const mouse = { x: 0, y: 0 };
+    let frameId = 0;
+
+    scene.add(group);
+    camera.position.set(8, 7, 9);
+    camera.lookAt(0, 0, 0);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setClearColor(0x000000, 0);
+
+    const cyanMaterial = new THREE.MeshStandardMaterial({
+      color: 0x4df5ff,
+      emissive: 0x4df5ff,
+      emissiveIntensity: 1.35,
+      metalness: 0.25,
+      roughness: 0.2,
+    });
+    const orangeMaterial = new THREE.MeshStandardMaterial({
+      color: 0xffb020,
+      emissive: 0xffb020,
+      emissiveIntensity: 1.05,
+      metalness: 0.2,
+      roughness: 0.24,
+    });
+    const steelMaterial = new THREE.MeshStandardMaterial({
+      color: 0x9aa7b8,
+      metalness: 0.62,
+      roughness: 0.28,
+    });
+    const baseMaterial = new THREE.MeshStandardMaterial({
+      color: 0x283244,
+      metalness: 0.45,
+      roughness: 0.36,
+    });
+    const coreMaterial = new THREE.MeshStandardMaterial({
+      color: 0x111827,
+      emissive: 0x10345a,
+      emissiveIntensity: 0.65,
+      metalness: 0.72,
+      roughness: 0.26,
+    });
+
+    scene.add(new THREE.AmbientLight(0x9aa7b8, 1.15));
+    const keyLight = new THREE.DirectionalLight(0xffffff, 2.2);
+    keyLight.position.set(5, 7, 6);
+    scene.add(keyLight);
+    const rimLight = new THREE.PointLight(0x4df5ff, 28, 22);
+    rimLight.position.set(-4, 3, 5);
+    scene.add(rimLight);
+    const warmLight = new THREE.PointLight(0xffb020, 16, 18);
+    warmLight.position.set(4, 2, -4);
+    scene.add(warmLight);
+
+    function addBox(size, position, material) {
+      const mesh = new THREE.Mesh(new THREE.BoxGeometry(size[0], size[1], size[2]), material);
+      mesh.position.set(position[0], position[1], position[2]);
+      group.add(mesh);
+      return mesh;
+    }
+
+    addBox([5.8, 0.32, 5.8], [0, -0.2, 0], baseMaterial);
+    addBox([2.2, 1.55, 2.2], [0, 0.75, 0], coreMaterial);
+    addBox([1.75, 0.32, 1.75], [0, 1.68, 0], cyanMaterial);
+
+    for (let i = 0; i < 5; i += 1) {
+      addBox([2.28, 0.035, 2.28], [0, 0.2 + i * 0.28, 0], cyanMaterial);
+    }
+
+    const islandPositions = [
+      [-4.2, 0.05, -2.9],
+      [4.1, 0.05, -2.55],
+      [-4.35, 0.05, 2.45],
+      [4.2, 0.05, 2.7],
+      [0, 0.05, -4.25],
+      [0, 0.05, 4.2],
+    ];
+
+    islandPositions.forEach((position, index) => {
+      addBox([1.55, 0.25, 1.25], position, baseMaterial);
+      const equipment = addBox(
+        index % 2 === 0 ? [0.62, 0.9, 0.62] : [0.86, 0.58, 0.86],
+        [position[0], 0.62, position[2]],
+        index % 3 === 0 ? orangeMaterial : steelMaterial
+      );
+      equipment.rotation.y = index * 0.35;
+    });
+
+    const conductorMaterial = new THREE.LineBasicMaterial({
+      color: 0x4df5ff,
+      transparent: true,
+      opacity: 0.68,
+    });
+    const towerMaterial = new THREE.LineBasicMaterial({
+      color: 0xdce7f5,
+      transparent: true,
+      opacity: 0.86,
+    });
+
+    function addLine(points, material = conductorMaterial) {
+      const geometry = new THREE.BufferGeometry().setFromPoints(points.map((point) => new THREE.Vector3(...point)));
+      const line = new THREE.Line(geometry, material);
+      group.add(line);
+      return line;
+    }
+
+    islandPositions.forEach((position) => {
+      addLine([[0, 0.05, 0], [position[0] * 0.58, 0.08, position[2] * 0.58], [position[0], 0.09, position[2]]]);
+    });
+
+    const towerX = -4.2;
+    const towerZ = 2.45;
+    addLine([[towerX, 0.28, towerZ], [towerX, 2.2, towerZ], [towerX - 0.45, 1.05, towerZ], [towerX + 0.45, 1.05, towerZ], [towerX, 2.2, towerZ]], towerMaterial);
+    addLine([[towerX - 0.65, 1.55, towerZ], [towerX + 0.65, 1.55, towerZ]], towerMaterial);
+    addLine([[towerX - 0.5, 1.55, towerZ], [-1.2, 1.4, 1.4], [1.3, 1.3, 0.9], [4.2, 1.2, 2.7]], conductorMaterial);
+
+    const nodeGeometry = new THREE.SphereGeometry(0.105, 20, 20);
+    const nodes = [[0, 1.9, 0], ...islandPositions.map((position) => [position[0], 0.95, position[2]])].map((position, index) => {
+      const node = new THREE.Mesh(nodeGeometry, index % 2 === 0 ? cyanMaterial : orangeMaterial);
+      node.position.set(position[0], position[1], position[2]);
+      group.add(node);
+      return node;
+    });
+
+    const grid = new THREE.GridHelper(8.2, 16, 0x4df5ff, 0x34465f);
+    grid.position.y = -0.015;
+    grid.material.transparent = true;
+    grid.material.opacity = 0.28;
+    group.add(grid);
+
+    group.rotation.x = -0.18;
+    group.rotation.y = -0.64;
+
+    function resizeHero3d() {
+      const rect = hero3dCanvas.getBoundingClientRect();
+      const width = Math.max(1, rect.width);
+      const height = Math.max(1, rect.height);
+      renderer.setSize(width, height, false);
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+    }
+
+    function animate(time = 0) {
+      const t = time * 0.001;
+      group.rotation.y = -0.64 + Math.sin(t * 0.22) * 0.08 + mouse.x * 0.12;
+      group.rotation.x = -0.18 + Math.sin(t * 0.18) * 0.035 - mouse.y * 0.08;
+
+      nodes.forEach((node, index) => {
+        const scale = 1 + Math.sin(t * 2.1 + index) * 0.18;
+        node.scale.setScalar(scale);
+      });
+
+      renderer.render(scene, camera);
+      if (!reduceMotion) {
+        frameId = requestAnimationFrame(animate);
+      }
+    }
+
+    panel?.addEventListener("pointermove", (event) => {
+      const rect = panel.getBoundingClientRect();
+      mouse.x = (event.clientX - rect.left) / Math.max(1, rect.width) - 0.5;
+      mouse.y = (event.clientY - rect.top) / Math.max(1, rect.height) - 0.5;
+    });
+
+    window.addEventListener("resize", resizeHero3d);
+    resizeHero3d();
+    panel?.classList.add("is-3d-ready");
+    animate();
+    window.addEventListener("beforeunload", () => cancelAnimationFrame(frameId));
+  } catch (error) {
+    hero3dCanvas.closest(".hub-panel")?.classList.add("is-3d-fallback");
+  }
+}
+
+initHero3d();
+
 if (canvas) {
   const ctx = canvas.getContext("2d");
   const pointer = { x: 0.5, y: 0.5 };
@@ -239,8 +430,6 @@ if (canvas) {
   let height = 0;
   let particles = [];
   let animationFrame = 0;
-
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function makeParticle(index) {
     const rail = index % 4;
@@ -293,7 +482,7 @@ if (canvas) {
     const py = pointer.y * height;
 
     particles.forEach((particle) => {
-      if (!prefersReducedMotion) {
+      if (!reduceMotion) {
         const pull = particle.charge * 0.000045;
         particle.x += particle.vx + (px - particle.x) * pull;
         particle.y += particle.vy + (py - particle.y) * pull;
@@ -335,7 +524,7 @@ if (canvas) {
       ctx.fill();
     });
 
-    if (!prefersReducedMotion) {
+    if (!reduceMotion) {
       animationFrame = requestAnimationFrame(draw);
     }
   }

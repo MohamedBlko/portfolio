@@ -29,9 +29,9 @@ information. For each project, include:
 - report, drawing, simulation, or demo link
 
 The visual theme is driven by `styles.css` and `script.js`: dark electrical
-engineering colors, steel accents, orange highlights, an isometric homepage
-hub, interactive project modals, and animated project simulations. The resume
-PDF is stored in `assets/`.
+engineering colors, steel accents, orange highlights, a Three.js 3D homepage
+power hub, interactive project modals, and animated project simulations. The
+resume PDF is stored in `assets/`.
 
 ## Run locally
 
