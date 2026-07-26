@@ -918,22 +918,43 @@ h3 {
   .site-nav {
     position: absolute;
     top: 100%;
-    right: 1rem;
-    left: 1rem;
+    right: clamp(1rem, 4vw, 2rem);
+    left: clamp(1rem, 4vw, 2rem);
+    z-index: 30;
     display: none;
     flex-direction: column;
     align-items: stretch;
-    padding: 0.8rem;
-    background: rgba(7, 8, 20, 0.96);
-    border-radius: 0.45rem;
+    gap: 0.55rem;
+    padding: 0.85rem;
+    background: linear-gradient(180deg, rgba(8, 12, 28, 0.99), rgba(5, 8, 18, 0.99));
+    border: 1px solid rgba(154, 244, 255, 0.34);
+    border-radius: 0.7rem;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.72), 0 0 34px rgba(77, 245, 255, 0.14);
+    backdrop-filter: blur(18px);
   }
 
   .site-nav.is-open {
     display: flex;
   }
 
+  .site-header:has(.site-nav.is-open)::after {
+    position: fixed;
+    inset: 100% 0 auto;
+    z-index: 20;
+    height: 100vh;
+    background: rgba(3, 5, 15, 0.58);
+    content: "";
+    pointer-events: none;
+  }
+
   .site-nav a {
-    border-radius: 0.3rem;
+    min-height: 3rem;
+    padding: 0.8rem 1rem;
+    color: var(--ink);
+    background: rgba(255, 255, 255, 0.065);
+    border: 1px solid rgba(154, 244, 255, 0.18);
+    border-radius: 0.45rem;
+    font-size: 1rem;
   }
 
   .hero,
@@ -2121,4 +2142,29 @@ meter::-webkit-meter-optimum-value {
     font-size: clamp(1.45rem, 7vw, 2rem);
   }
 
+}
+
+/* Final mobile menu override: keep the dropdown separate from page text. */
+@media (max-width: 980px) {
+  .site-header .site-nav {
+    top: calc(100% + 0.65rem);
+    right: 1rem;
+    left: 1rem;
+    z-index: 40;
+    gap: 0.55rem;
+    padding: 0.85rem;
+    background: #070b18;
+    border: 1px solid rgba(154, 244, 255, 0.36);
+    border-radius: 0.75rem;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.78), 0 0 34px rgba(77, 245, 255, 0.16);
+  }
+
+  .site-header .site-nav a {
+    min-height: 3rem;
+    padding: 0.8rem 1rem;
+    color: var(--ink);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(154, 244, 255, 0.2);
+    border-radius: 0.45rem;
+  }
 }
