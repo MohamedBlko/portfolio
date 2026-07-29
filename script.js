@@ -11,78 +11,186 @@ const simSlider = document.querySelector("#sim-slider");
 const simCanvas = document.querySelector("#sim-canvas");
 
 const projectDetails = {
-  motor: {
-    type: "Automation | Motor control",
-    title: "Industrial Motor Control Panel",
+  chess: {
+    type: "ELE3000 | Automation",
+    title: "Automated Chess Board",
     summary:
-      "Mini case study for a PLC-controlled motor cabinet used on a manufacturing line, with emphasis on safe sequence logic, I/O mapping, test procedure and maintainable documentation.",
+      "Low-budget automated chess board concept focused on electromechanical constraints, position tracking, embedded control and reliable move execution.",
     visual: "plc",
-    sim: "PLC sequence",
+    sim: "Move sequence",
     overview: [
-      "Objective: design a motor control sequence for start, stop, fault handling and operator feedback.",
-      "Responsibilities: electrical schematics, I/O list, PLC sequence logic, HMI status points and test checklist.",
-      "Constraints: safety interlocks, production continuity, readable troubleshooting and clear commissioning notes.",
+      "Objective: automate board movement while keeping cost, complexity and reliability under control.",
+      "Responsibilities: break down sensing, actuation, move logic, wiring and test constraints.",
+      "Constraints: low budget, repeatability, alignment, user interaction and maintainable documentation.",
     ],
     docs: [
-      "Software: Schneider PLC tools, HMI/SCADA concepts, Excel I/O tracking and technical reports.",
-      "Engineering result: sequence structured into states and transitions for easier debugging and handover.",
-      "Target metric: reduce troubleshooting time by documenting every input, output, alarm and permissive condition.",
+      "Software: C/C++ concepts, control logic, test tables and technical documentation.",
+      "Engineering result: system decomposed into sensing, control, actuation and validation blocks.",
+      "Recruiter value: shows mechatronics thinking, troubleshooting and pragmatic design decisions.",
     ],
     assets: [
-      "Panel photo, control schematic, I/O table and PLC sequence diagram.",
-      "Commissioning checklist with start/stop, fault reset and safety validation.",
-      "Short screen recording of HMI status and motor sequence simulation.",
+      "Board concept photo or CAD sketch.",
+      "Motion sequence diagram and wiring sketch.",
+      "Test plan for piece detection and move repeatability.",
     ],
   },
-  hotswap: {
-    type: "Power electronics | Reliability",
-    title: "Redundant Hot-Swap Power Supply",
+  odroid: {
+    type: "Linux | Embedded",
+    title: "Odroid-C2 Embedded Linux Platform",
     summary:
-      "Engineering file for a removable redundant power supply with service continuity, protection, maintainability and validation constraints.",
-    visual: "power",
-    sim: "Load profile",
-    overview: [
-      "Objective: maintain load supply during source replacement or source fault.",
-      "Responsibilities: block diagram, operating modes, failure cases, protection assumptions and validation plan.",
-      "Constraints: reliability, thermal behavior, maintainability, protection coordination and service continuity.",
-    ],
-    docs: [
-      "Software: LTspice/EasyEDA concepts, Excel calculations, MATLAB plots and structured documentation.",
-      "Engineering result: clarified power paths, protection needs and test cases before physical implementation.",
-      "Target metric: validate continuity of service under load steps and source transfer events.",
-    ],
-    assets: [
-      "Electrical block diagram and power path diagram.",
-      "Load table, protection assumptions and thermal notes.",
-      "Simulation capture, validation report and design review notes.",
-    ],
-  },
-  distribution: {
-    type: "Power systems | Electrical design",
-    title: "480V Distribution Study",
-    summary:
-      "Recruiter-style design study for a low-voltage distribution concept including load calculation, feeder sizing, protective device selection and documentation package.",
+      "Embedded Linux project using Odroid-C2 with CMake, menuconfig, Buildroot, Yocto Project and Doxygen documentation.",
     visual: "distribution",
-    sim: "Load demand",
+    sim: "Build pipeline",
     overview: [
-      "Objective: prepare a 480V distribution concept for industrial or commercial loads.",
-      "Responsibilities: load list, demand estimate, feeder sizing, single-line diagram and protection notes.",
-      "Constraints: safety, voltage level, maintainability, expansion capacity and code-aware documentation.",
+      "Objective: understand and document an embedded Linux workflow from configuration to build outputs.",
+      "Responsibilities: organize build configuration, toolchain notes, source structure and documentation.",
+      "Constraints: reproducibility, dependency tracking, target hardware limitations and readable setup steps.",
     ],
     docs: [
-      "Software: AutoCAD Electrical target workflow, Excel calculation sheet, ETAP/EasyPower/SKM readiness.",
-      "Engineering result: design package structure ready for review by a senior electrical engineer.",
-      "Target metric: size feeders up to 600A and document assumptions for 250 kW-class installations.",
+      "Tools: Odroid-C2, CMake, menuconfig, Buildroot, Yocto Project and Doxygen.",
+      "Engineering result: build process documented so another technical user can reproduce it.",
+      "Recruiter value: connects embedded systems, Linux, documentation and hardware-aware debugging.",
     ],
     assets: [
-      "Single-line diagram, panel schedule and load calculation table.",
-      "Protection device notes and grounding assumptions.",
-      "PDF calculation package and drawing export.",
+      "Build configuration screenshots.",
+      "Doxygen output and README procedure.",
+      "Architecture diagram for toolchain, board and application.",
     ],
+  },
+  qr: {
+    type: "OpenCV | Vision",
+    title: "QR to OpenCV Reader",
+    summary:
+      "Vision pipeline for QR detection using camera input, OpenCV processing and embedded-friendly documentation.",
+    visual: "embedded",
+    sim: "Detection signal",
+    overview: [
+      "Objective: read QR information from camera input and prepare the result for system use.",
+      "Responsibilities: camera acquisition, detection flow, processing notes and validation cases.",
+      "Constraints: lighting, camera alignment, processing speed and robust detection.",
+    ],
+    docs: [
+      "Tools: OpenCV, camera input, QR detection and Doxygen-style documentation.",
+      "Engineering result: detection pipeline explained with inputs, outputs and failure cases.",
+      "Recruiter value: shows sensor integration, vision, embedded constraints and testing.",
+    ],
+    assets: [
+      "Camera setup photo.",
+      "Detection screenshots and sample QR inputs.",
+      "Pipeline diagram and test notes.",
+    ],
+  },
+  radio: {
+    type: "ELE2000 | Communications",
+    title: "FM Radio Station",
+    summary: "Communication project covering FM radio concepts, modulation/demodulation, signal chain behavior and testing.",
+    visual: "power",
+    sim: "FM waveform",
+    overview: [
+      "Objective: build understanding of a radio communication chain from signal generation to reception.",
+      "Responsibilities: document modulation, demodulation, signal path and test observations.",
+      "Constraints: noise, bandwidth, tuning, component behavior and measurement clarity.",
+    ],
+    docs: [
+      "Tools: lab instruments, signal analysis, modulation/demodulation theory and report writing.",
+      "Engineering result: radio system explained as functional blocks with measured behavior.",
+      "Recruiter value: demonstrates signal thinking and structured lab documentation.",
+    ],
+    assets: ["Block diagram.", "Signal captures.", "Lab report or measurement table."],
+  },
+  intercom: {
+    type: "ELE2000 | Audio",
+    title: "Intercom Project",
+    summary: "Analog audio and communication project focused on signal path, amplification, testing and clear documentation.",
+    visual: "plc",
+    sim: "Audio signal",
+    overview: [
+      "Objective: create and validate a basic intercom communication path.",
+      "Responsibilities: analyze audio stages, document wiring, verify signal behavior and prepare test notes.",
+      "Constraints: gain, noise, signal clarity, wiring reliability and component limits.",
+    ],
+    docs: [
+      "Tools: lab instruments, analog circuits, measurement tables and technical report.",
+      "Engineering result: audio path described in stages with observed limitations.",
+      "Recruiter value: shows practical analog troubleshooting and documentation.",
+    ],
+    assets: ["Circuit photo.", "Signal measurements.", "Audio chain block diagram."],
+  },
+  parking: {
+    type: "ELE1000 | Digital logic",
+    title: "Parking Lot Place Finder",
+    summary: "Digital logic project using logic gates to detect and represent available spaces in a parking lot.",
+    visual: "distribution",
+    sim: "Logic states",
+    overview: [
+      "Objective: detect parking availability using logic gate combinations.",
+      "Responsibilities: define input/output states, truth tables, logic diagrams and validation cases.",
+      "Constraints: simple logic, reliable state representation and readable circuit explanation.",
+    ],
+    docs: [
+      "Tools: logic gates, truth tables, digital circuit diagrams and test cases.",
+      "Engineering result: problem converted into clear combinational logic.",
+      "Recruiter value: demonstrates fundamentals in digital logic and structured reasoning.",
+    ],
+    assets: ["Truth table.", "Logic gate diagram.", "Demo or test matrix."],
+  },
+  rfid: {
+    type: "Embedded | Sensors",
+    title: "RFID Reading Module",
+    summary: "RFID reading module for identification workflows, embedded interfaces and data acquisition.",
+    visual: "power",
+    sim: "Read pulses",
+    overview: [
+      "Objective: read RFID tags and make the identifier available to the application layer.",
+      "Responsibilities: interface setup, read flow, test cases and documentation.",
+      "Constraints: read distance, reliability, timing and data handling.",
+    ],
+    docs: [
+      "Tools: RFID module, microcontroller or embedded interface, test table and report notes.",
+      "Engineering result: sensor module documented from wiring to data output.",
+      "Recruiter value: shows sensor integration and embedded debugging.",
+    ],
+    assets: ["Wiring photo.", "Read log.", "Interface diagram."],
+  },
+  shoe: {
+    type: "Sensors | Product system",
+    title: "Shoe Measuring Device",
+    summary: "Measurement device concept using camera/sensor data, calibration and product-oriented documentation.",
+    visual: "embedded",
+    sim: "Measurement profile",
+    overview: [
+      "Objective: estimate shoe size or dimensions from sensor/camera information.",
+      "Responsibilities: define calibration, measurement flow, point detection and documentation.",
+      "Constraints: accuracy, repeatability, lighting, sensor placement and user workflow.",
+    ],
+    docs: [
+      "Tools: camera or ToF concepts, OpenCV-style processing, calibration notes and UML documentation.",
+      "Engineering result: product workflow structured into sensing, processing and output steps.",
+      "Recruiter value: combines sensors, product thinking and technical documentation.",
+    ],
+    assets: ["Prototype image.", "Calibration notes.", "Measurement algorithm diagram."],
+  },
+  studio: {
+    type: "Trolet | Shopify",
+    title: "Photo Studio for Shopify Products",
+    summary: "Operational project for product photo consistency, workflow structure and Shopify asset preparation.",
+    visual: "distribution",
+    sim: "Workflow throughput",
+    overview: [
+      "Objective: improve product photo workflow for Shopify product listings.",
+      "Responsibilities: structure capture process, naming/export flow, data consistency and operational notes.",
+      "Constraints: repeatability, image consistency, time per product and upload organization.",
+    ],
+    docs: [
+      "Tools: Shopify workflow, CSV/import-export logic, scripts and structured file handling.",
+      "Engineering result: repeatable process for product assets and e-commerce data.",
+      "Recruiter value: shows process automation, practical tooling and business context.",
+    ],
+    assets: ["Studio setup photo.", "Workflow diagram.", "Before/after listing examples."],
   },
 };
 
-let activeProject = projectDetails.motor;
+let activeProject = projectDetails.chess;
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (year) {
