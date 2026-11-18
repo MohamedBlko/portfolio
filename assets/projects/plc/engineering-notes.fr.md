@@ -1,6 +1,6 @@
 # Automatisation séquentielle d'un palan
 
-ELE8202 | Automne 2025 | Projet d'équipe
+Automatisation industrielle | Commande séquentielle | Commande séquentielle
 
 ## Objectif
 Coordonner les mouvements horizontal et vertical d'un palan dans les modes d'initialisation, manuel, assisté et automatique d'un procédé industriel pédagogique.

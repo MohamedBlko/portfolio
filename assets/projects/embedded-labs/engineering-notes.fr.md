@@ -1,6 +1,6 @@
 # Acquisition sur microcontrôleur
 
-ELE3312 | Documents de 2024 | Archive de laboratoire
+Interfaces embarquées | Échantillonnage | Configuration de périphériques
 
 ## Objectif
 Comprendre comment les temporisateurs matériels et le DMA coordonnent les entrées et sorties échantillonnées d'une application sur microcontrôleur.

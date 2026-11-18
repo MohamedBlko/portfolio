@@ -1,6 +1,6 @@
 # Alimentation redondante
 
-Projet universitaire en équipe | Aperçu non confidentiel
+Électronique de puissance | Fiabilité | Aperçu non confidentiel
 
 ## Objectif
 Contribuer à un projet universitaire en équipe portant sur la fiabilité de l'alimentation et une documentation structurée.

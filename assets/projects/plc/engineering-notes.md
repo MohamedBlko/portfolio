@@ -1,6 +1,6 @@
 # Sequential PLC crane automation
 
-ELE8202 | Fall 2025 | Team project
+Industrial automation | Sequence control | Sequence controller
 
 ## Objective
 Coordinate horizontal and vertical crane motion through initialization, manual, assisted and automatic modes in an academic industrial-process model.

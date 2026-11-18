@@ -1,6 +1,6 @@
-# Projet exploratoire en biosciences
+# Exploration de l'expression génique
 
-Archive de présentation scientifique | Présentation archivée
+Biosciences | Méthodes expérimentales | Étude exploratoire
 
 ## Objectif
 Présenter une question exploratoire sur le contrôle de l'expression d'une protéine fluorescente à l'aide d'un ribozyme.

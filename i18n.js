@@ -20,8 +20,9 @@
     if ((match = /^(\d+) (images?|items?)(?: \/ (\d+) videos?)?$/.exec(text))) return `${match[1]} ${match[2].startsWith('image') ? (match[1] === '1' ? 'image' : 'images') : (match[1] === '1' ? 'élément' : 'éléments')}${match[3] ? ` / ${match[3]} vidéos` : ''}`;
     if ((match = /^Show more \((\d+) remaining\)$/.exec(text))) return `Voir plus (${match[1]} restants)`;
     if ((match = /^(\d+) \/ 16 available$/.exec(text))) return `${match[1]} / 16 libres`;
-    if ((match = /^Level (\d+), space (\d+): (occupied|available)$/.exec(text))) return `Étage ${match[1]}, place ${match[2]} : ${match[3] === 'occupied' ? 'occupée' : 'libre'}`;
-    if ((match = /^Toggle level (\d+), space (\d+)$/.exec(text))) return `Changer l'état : étage ${match[1]}, place ${match[2]}`;
+    if ((match = /^Level ([A-D]), space ([1-4]): (occupied|available)$/.exec(text))) return `Niveau ${match[1]}, place ${match[2]} : ${match[3] === 'occupied' ? 'occupée' : 'libre'}`;
+    if ((match = /^Toggle level ([A-D]), space ([1-4])$/.exec(text))) return `Changer l'état : niveau ${match[1]}, place ${match[2]}`;
+    if ((match = /^([a-h][1-8]): (.+)$/.exec(text))) return `${match[1]} : ${translate(match[2], lang)}`;
     if ((match = /^(\d+) \/ (\d+) - (.+)$/.exec(text))) return `${match[1]} / ${match[2]} - ${translate(match[3], lang)}`;
     if (text.endsWith(' | Mohamed Marou Belko')) return translate(text.slice(0, -' | Mohamed Marou Belko'.length), lang) + ' | Mohamed Marou Belko';
     return source;

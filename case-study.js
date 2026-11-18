@@ -101,29 +101,29 @@ if (parkingBoard) {
   const render = () => {
     occupied.forEach((busy, index) => {
       bays[index].setAttribute("aria-pressed", String(busy));
-      bays[index].setAttribute("aria-label", `Level ${Math.floor(index / 4) + 1}, space ${index % 4 + 1}: ${busy ? "occupied" : "available"}`);
-      bays[index].textContent = busy ? "P" : "+";
+      const address = window.PortfolioModels.parkingAddress(index);
+      bays[index].setAttribute("aria-label", `Level ${address[0]}, space ${address[1]}: ${busy ? "occupied" : "available"}`);
+      bays[index].textContent = address;
     });
-    const first = occupied.indexOf(false);
     document.querySelector("#parking-count").textContent = `${occupied.filter((busy) => !busy).length} / 16 available`;
-    document.querySelector("#parking-next").textContent = first < 0 ? "Full" : `L${Math.floor(first / 4) + 1} / P${first % 4 + 1}`;
+    document.querySelector("#parking-next").textContent = window.PortfolioModels.firstAvailable(occupied) || "Full";
   };
   parkingBoard.append(document.createElement("span"));
   for (let i = 1; i <= 4; i++) {
     const label = document.createElement("span");
-    label.textContent = `P${i}`;
+    label.textContent = String(i);
     parkingBoard.append(label);
   }
   for (let level = 0; level < 4; level++) {
     const label = document.createElement("span");
-    label.textContent = `L${level + 1}`;
+    label.textContent = 'ABCD'[level];
     parkingBoard.append(label);
     for (let place = 0; place < 4; place++) {
       const index = level * 4 + place;
       const button = document.createElement("button");
       button.type = "button";
       button.className = "parking-bay";
-      button.title = `Toggle level ${level + 1}, space ${place + 1}`;
+      button.title = `Toggle level ${'ABCD'[level]}, space ${place + 1}`;
       button.addEventListener("click", () => { occupied[index] = !occupied[index]; render(); });
       bays.push(button);
       parkingBoard.append(button);

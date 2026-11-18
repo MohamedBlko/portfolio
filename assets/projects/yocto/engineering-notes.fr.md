@@ -1,6 +1,6 @@
 # Environnement Linux pour Odroid C2
 
-ELE4205 | 2025 | Archive de compilation
+Linux embarqué | Images cibles | Environnement de compilation
 
 ## Objectif
 Configurer et organiser un environnement Linux embarqué pour une cible Odroid C2.

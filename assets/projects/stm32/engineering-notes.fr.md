@@ -1,6 +1,6 @@
 # Jeu musical sur STM32
 
-ELE3312 | Microcontrôleurs | Projet d'équipe
+Microcontrôleurs | Audio interactif | Prototype embarqué
 
 ## Objectif
 Coordonner l'état du jeu, le rythme des notes, le pointage et l'affichage sur un montage à base de STM32.

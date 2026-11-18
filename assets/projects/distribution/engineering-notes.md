@@ -1,6 +1,6 @@
 # Distribution and electrical machines
 
-ELE8458 | Winter 2026 | Coursework calculations
+Electrical machines | Load analysis | Calculation models
 
 ## Objective
 Translate academic electrical-load and machine problems into explicit assumptions, equivalent circuits and calculations.

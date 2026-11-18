@@ -1,6 +1,6 @@
-# Communication and channel coding labs
+# Communication and channel coding
 
-ELE3701A | Laboratory archive | Models and scripts
+Communication systems | Error correction | Models and scripts
 
 ## Objective
 Explore a communication chain from signal generation and spectral inspection to block-code decoding.

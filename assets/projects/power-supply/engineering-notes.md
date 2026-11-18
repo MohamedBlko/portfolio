@@ -1,6 +1,6 @@
 # Redundant power supply
 
-Academic team project | Confidential overview
+Power electronics | Reliability | Confidential overview
 
 ## Objective
 Contribute to an academic team project involving reliable power delivery and structured engineering documentation.

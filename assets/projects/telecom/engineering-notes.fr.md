@@ -1,6 +1,6 @@
 # Communications et codage de canal
 
-ELE3701A | Archive de laboratoire | Modèles et scripts
+Systèmes de communication | Correction d'erreurs | Modèles et scripts
 
 ## Objectif
 Explorer une chaîne de communication, de la génération et de l'analyse spectrale au décodage par blocs.

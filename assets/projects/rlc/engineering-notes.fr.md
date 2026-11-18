@@ -1,6 +1,6 @@
 # Mesures de circuits RLC monophasés
 
-ELE3400 | Automne 2024 | Laboratoire en équipe
+Électrotechnique | Réponse des circuits | Étude de mesures
 
 ## Objectif
 Relier le comportement sinusoïdal, la résonance et les puissances des circuits aux mesures expérimentales.

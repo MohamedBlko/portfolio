@@ -1,6 +1,6 @@
 # Identification d'un servomoteur
 
-ELE3201 | Automne 2024 | Analyse préparatoire
+Commande de mouvement | Identification système | Modèle d'identification
 
 ## Objectif
 Utiliser un modèle simplifié et des courbes de réponse pour estimer les paramètres nécessaires à la conception ultérieure d'un correcteur.

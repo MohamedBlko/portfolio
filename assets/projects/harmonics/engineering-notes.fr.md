@@ -1,6 +1,6 @@
 # Charges non linéaires et transformateurs
 
-ELE8458 | Hiver 2026 | Laboratoire en équipe
+Qualité de l'onde | Couplages de transformateurs | Étude de mesures
 
 ## Objectif
 Étudier le comportement électrique de charges d'éclairage non linéaires et comparer des couplages de transformateurs dans un montage de laboratoire réduit.

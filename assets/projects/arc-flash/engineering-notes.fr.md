@@ -1,6 +1,6 @@
 # Étude d'arc électrique et de protection
 
-ELE8458 | Hiver 2026 | Étude universitaire
+Protection électrique | Énergie incidente | Analyse de protection
 
 ## Objectif
 Examiner l'influence des défauts, de la configuration des électrodes et du temps d'élimination sur un calcul pédagogique d'arc électrique.

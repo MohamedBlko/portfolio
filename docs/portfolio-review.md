@@ -24,6 +24,16 @@ Reviewed: 2026-11-18. Scope: 26 pages, including 19 case studies.
 - Original code and figure contents are preserved. The existing English CV is
   explicitly labeled; no unverified translated resume replaces it.
 
+## Project Presentation Update
+
+- Project headings now use descriptive engineering domains instead of course codes
+  and academic-status labels. Technical source provenance and validation limits remain.
+- Parking labels use A-D for levels and 1-4 for places, including outputs such as B3.
+- The mechanical chess model visualizes XYZ motion, electromagnet pickup/drop,
+  occupancy sensing and captures, with manual legal moves and demonstration controls.
+- The original Wokwi project is linked; the browser model does not claim to emulate
+  its firmware or its inherited chess engine.
+
 ## Verification
 
 - Local links, anchors, unique IDs, headings and language controls checked on all pages.

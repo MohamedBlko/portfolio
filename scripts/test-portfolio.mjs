@@ -33,8 +33,9 @@ for (const [source, translated] of [
   ['6 of 19 projects and studies','6 sur 19 projets et études'],
   ['Show more (12 remaining)','Voir plus (12 restants)'],
   ['16 / 16 available','16 / 16 libres'],
-  ['Level 1, space 2: occupied','Étage 1, place 2 : occupée'],
-  ['Next: Automated chess board','Suivant : Échiquier automatisé'],
+  ['Level A, space 2: occupied','Niveau A, place 2 : occupée'],
+  ['Next: Mechanical chess board','Suivant : Échiquier mécanique'],
+  ['e2: White pawn','e2 : Pion blanc'],
   ['1 / 27 - Circuit and prototype','1 / 27 - Circuit et prototype'],
   ['Skills | Mohamed Marou Belko','Compétences | Mohamed Marou Belko']
 ]) assert.equal(api.t(source), translated);

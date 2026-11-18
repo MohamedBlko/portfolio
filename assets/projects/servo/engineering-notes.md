@@ -1,6 +1,6 @@
 # Servomotor identification
 
-ELE3201 | Fall 2024 | Preparatory analysis
+Motion control | System identification | Identification model
 
 ## Objective
 Use a simplified motor model and response plots to estimate the parameters needed for later controller design.

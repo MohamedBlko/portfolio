@@ -1,0 +1,39 @@
+<section class="section case-content" aria-labelledby="chess-motion-title">
+  <h2 id="chess-motion-title">Mechanical motion</h2>
+  <div id="chess-demo" class="case-tool chess-model" data-chess-interactive hidden>
+    <div class="chess-toolbar">
+      <label>Sequence<select id="chess-mode"><option value="demo">Opening and captures</option><option value="manual">Manual moves</option></select></label>
+      <div class="chess-commands" role="group" aria-label="Motion controls">
+        <button type="button" class="chess-icon-button" id="chess-play" title="Play" aria-label="Play"><i data-lucide="play" aria-hidden="true"></i></button>
+        <button type="button" class="chess-icon-button" id="chess-step" title="Next phase" aria-label="Next phase"><i data-lucide="step-forward" aria-hidden="true"></i></button>
+        <button type="button" class="chess-icon-button" id="chess-undo" title="Undo move" aria-label="Undo move"><i data-lucide="undo-2" aria-hidden="true"></i></button>
+        <button type="button" class="chess-icon-button" id="chess-reset" title="Reset" aria-label="Reset"><i data-lucide="rotate-ccw" aria-hidden="true"></i></button>
+      </div>
+      <label class="chess-speed">Speed <output id="chess-speed-value" for="chess-speed" data-no-translate>2x</output><input id="chess-speed" type="range" min="0.5" max="4" step="0.5" value="2"></label>
+      <label class="chess-promotion" hidden>Promotion<select id="chess-promotion"><option value="q">Queen</option><option value="r">Rook</option><option value="b">Bishop</option><option value="n">Knight</option></select></label>
+    </div>
+    <div class="chess-machine-layout">
+      <div class="chess-stage">
+        <div class="chess-surface">
+          <div id="chess-board" class="chess-board" role="group" aria-label="Chessboard"></div>
+          <div class="chess-ranks" aria-hidden="true" data-no-translate><span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span></div>
+          <div class="chess-files" aria-hidden="true" data-no-translate><span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span></div>
+          <div id="chess-gantry" class="chess-gantry" aria-hidden="true"><div class="chess-rail"></div><div class="chess-carriage"><span id="chess-held-piece" data-no-translate></span></div></div>
+        </div>
+      </div>
+      <div class="chess-readout">
+        <div class="chess-phase"><span>Motion phase</span><strong id="chess-phase" role="status">Ready</strong><small id="chess-phase-index" data-no-translate>0 / 0</small><progress id="chess-progress" max="1" value="0" aria-label="Phase progress"></progress></div>
+        <dl class="chess-telemetry">
+          <div><dt>Axis X</dt><dd id="chess-x" data-no-translate>0.0 mm</dd></div><div><dt>Axis Y</dt><dd id="chess-y" data-no-translate>0.0 mm</dd></div><div><dt>Axis Z</dt><dd id="chess-z" data-no-translate>0.0 mm</dd></div>
+          <div><dt>Electromagnet</dt><dd id="chess-magnet">Off</dd></div><div><dt>From</dt><dd id="chess-from" data-no-translate>-</dd></div><div><dt>To</dt><dd id="chess-to" data-no-translate>-</dd></div>
+        </dl>
+        <div class="chess-sensors"><div class="chess-readout-heading"><h3>Sensors</h3><span id="chess-occupancy" data-no-translate>32 / 64</span></div><div id="chess-leds" class="chess-leds" role="img" aria-label="Occupancy sensor matrix"></div></div>
+        <div class="chess-captures"><h3>Captured pieces</h3><div id="chess-captured" aria-live="polite"></div></div>
+        <p id="chess-turn" class="chess-turn">White to move</p>
+      </div>
+    </div>
+  </div>
+  <p class="chess-model-note">Visual motion model: 26 mm square pitch, a 22 mm offset and a 64 mm Z stroke from the Wokwi sketch. Motion timing and capture clearance are illustrative; this is not a firmware emulator.</p>
+  <p id="chess-unavailable" hidden>Interactive model unavailable. The original Wokwi project remains accessible.</p>
+  <noscript><p>The original Wokwi project and the design gallery remain available without the animation.</p></noscript>
+</section>

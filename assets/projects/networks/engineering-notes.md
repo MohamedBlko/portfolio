@@ -1,6 +1,6 @@
 # Three-bus power-flow analysis
 
-ELE8411 | Fall 2025 | Individual coursework
+Power networks | Load flow | Network model
 
 ## Objective
 Relate the bus-admittance model and nonlinear power equations to voltages and line power flows in an academic network.

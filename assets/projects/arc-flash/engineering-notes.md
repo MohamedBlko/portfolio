@@ -1,6 +1,6 @@
 # Arc-flash and protection study
 
-ELE8458 | Winter 2026 | Academic study
+Electrical protection | Incident energy | Protection analysis
 
 ## Objective
 Examine how fault conditions, electrode configurations and protection clearing times affect an academic arc-flash calculation.

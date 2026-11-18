@@ -20,8 +20,10 @@ for path in pages:
     ids = doc.xpath('//@id')
     if len(ids) != len(set(ids)): errors.append(f'{path.name}: duplicate IDs')
     if len(doc.xpath('//h1')) != 1: errors.append(f'{path.name}: expected one h1')
+    labels = doc.xpath('//header[contains(@class,"case-heading")]//h1/text() | //p[@class="project-type"]/text() | //*[@class="case-status"]/text()')
+    if any(re.search(r'\bELE\d+|academic|coursework|university', label, re.I) for label in labels): errors.append(f'{path.name}: academic label in project presentation')
     if len(doc.xpath('//*[@data-language]')) != 2: errors.append(f'{path.name}: missing language switch')
-    scripts = doc.xpath('//script/@src')
+    scripts = [urlsplit(src).path for src in doc.xpath('//script/@src')]
     for src in ('translations.js', 'i18n.js', 'script.js'):
         if scripts.count(src) != 1: errors.append(f'{path.name}: script count for {src}')
     if scripts.index('i18n.js') > scripts.index('script.js'): errors.append(f'{path.name}: script order')
@@ -33,7 +35,7 @@ for path in pages:
         if url.fragment and target.suffix == '.html' and target.exists():
             linked = html.document_fromstring(target.read_text(encoding='utf-8'))
             if url.fragment not in linked.xpath('//@id'): errors.append(f'{path.name}: missing anchor {source}')
-    copy = doc.xpath('//text()[not(ancestor::script or ancestor::style or ancestor::pre or ancestor::code)] | //@aria-label | //@alt | //@placeholder | //@title | //meta[@name="description"]/@content')
+    copy = doc.xpath('//text()[not(ancestor::script or ancestor::style or ancestor::pre or ancestor::code or ancestor::*[@data-no-translate])] | //@aria-label | //@alt | //@placeholder | //@title | //meta[@name="description"]/@content')
     for source in copy:
         text = normalize(source)
         if not text or text in translations or text in identity or text in {'©', '→'}: continue

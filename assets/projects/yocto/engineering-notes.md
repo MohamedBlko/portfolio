@@ -1,6 +1,6 @@
 # Odroid C2 Linux build environment
 
-ELE4205 | 2025 | Build archive
+Embedded Linux | Target images | Build environment
 
 ## Objective
 Configure and organize an embedded Linux environment for an Odroid C2 target.

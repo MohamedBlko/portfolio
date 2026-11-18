@@ -5,6 +5,8 @@ ELE1001, projet d'équipe, 2019.
 ## Objectif
 Représenter l'occupation de quatre étages de quatre places. Indiquer le nombre
 de places libres et les coordonnées de la prochaine place disponible.
+Les niveaux sont A, B, C et D; les places vont de 1 à 4. Par exemple, B3 désigne
+le niveau B, place 3. Le modèle du site utilise cette même notation A1-D4.
 
 ## Réalisation
 Le rapport décrit les capteurs, le balayage, l'horloge, les compteurs, les

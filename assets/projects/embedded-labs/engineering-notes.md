@@ -1,6 +1,6 @@
-# Microcontroller acquisition labs
+# Microcontroller data acquisition
 
-ELE3312 | 2024 materials | Laboratory archive
+Embedded interfaces | Sampling | Peripheral configuration
 
 ## Objective
 Understand how hardware timers and DMA coordinate sampled input and output with a microcontroller application.

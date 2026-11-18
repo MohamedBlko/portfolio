@@ -1,6 +1,6 @@
 # Distribution et machines électriques
 
-ELE8458 | Hiver 2026 | Calculs de cours
+Machines électriques | Analyse des charges | Modèles de calcul
 
 ## Objectif
 Traduire des problèmes pédagogiques de charges et de machines électriques en hypothèses explicites, circuits équivalents et calculs.

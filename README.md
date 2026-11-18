@@ -38,6 +38,8 @@ node scripts/build-translations.mjs
 python scripts/prepare-site.py
 node scripts/check-case-studies.mjs
 node scripts/test-portfolio.mjs
+node scripts/test-project-models.mjs
+node scripts/test-chess-controller.mjs
 python scripts/audit-portfolio.py
 ```
 
@@ -82,6 +84,26 @@ when available and carries `?lang=fr` or `?lang=en` across local page links.
 French project summaries are downloaded as `engineering-notes.fr.md`; original
 source figures and code are not altered. The existing resume is English and its
 link is labeled accordingly. No visitor message is sent during automated tests.
+
+## Interactive project models
+
+Parking addresses use levels A-D and spaces 1-4, with the first available result
+shown as A1, B3, etc. `project-models.js` owns the coordinate and motion-planning
+functions, with tests for all 16 parking positions.
+
+The mechanical chess page includes a two-dimensional three-axis positioning model,
+64 occupancy indicators, electromagnet state, pause/step/reset controls, legal manual
+moves and an opening/capture sequence. Its 26 mm pitch, 22 mm offset and 64 mm Z
+stroke come from the linked Wokwi sketch. Motion timing and clearance are illustrative.
+It does not run the Arduino firmware or the inherited Micro-Max engine.
+
+Rules are provided by chess.js 1.4.0 (BSD-2-Clause); controls use Lucide 0.468.0 (ISC).
+The pinned browser libraries and their upstream licenses are kept in `vendor/`.
+The template is `templates/chess-motion.html`, behavior is `chess-demo.js`, and
+styling remains in `case-study.css`. The motion tests also cover captures,
+castling, en passant, promotions and return to the home position.
+Controller tests cover pause/resume, one-phase stepping, reset while carrying a
+piece, sensor occupancy, manual move validation, undo and low-frame-rate timing.
 
 ## Deploy on GitHub Pages
 

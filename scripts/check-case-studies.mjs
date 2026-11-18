@@ -36,7 +36,8 @@ for (const file of ['projects.html', ...projects.map((p) => `project-${p.slug}.h
   for (const match of html.matchAll(/(?:href|src|poster)="([^"]+)"/g)) {
     const path = match[1];
     if (/^(https?:|mailto:|tel:|#|data:)/.test(path)) continue;
-    assert(existsSync(resolve(root, path.split('#')[0])), `${file}: missing link ${path}`);
+    const target = decodeURIComponent(new URL(path, 'https://portfolio.invalid/').pathname.slice(1));
+    assert(existsSync(resolve(root, target)), `${file}: missing link ${path}`);
   }
   for (const match of html.matchAll(/<video\b[^>]*>/g)) assert(match[0].includes('preload="none"') && !match[0].includes('autoplay'));
 }

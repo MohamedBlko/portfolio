@@ -1,6 +1,6 @@
 # Écoulement de puissance à trois nœuds
 
-ELE8411 | Automne 2025 | Travail de cours individuel
+Réseaux électriques | Écoulement de puissance | Modèle de réseau
 
 ## Objectif
 Relier la matrice d'admittance et les équations non linéaires aux tensions et aux puissances des lignes d'un réseau pédagogique.

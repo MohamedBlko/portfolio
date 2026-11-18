@@ -1,6 +1,6 @@
 # STM32 musical game
 
-ELE3312 | Microcontrollers | Team project
+Microcontrollers | Interactive audio | Embedded prototype
 
 ## Objective
 Coordinate game state, note timing, score and display updates on an STM32-based hardware setup.

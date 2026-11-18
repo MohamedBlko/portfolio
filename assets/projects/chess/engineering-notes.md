@@ -1,6 +1,6 @@
-# Automated chess board
+# Mechanical chess board
 
-ELE3000 | Winter 2023 | Design and subsystem tests
+Mechatronics | Motion control | Design and subsystem tests
 
 ## Objective
 Develop a physical board capable of supporting a solo chess experience through sensing, game logic and mechanical movement.
@@ -12,10 +12,10 @@ Develop a physical board capable of supporting a solo chess experience through s
 - Prepare board layouts and mechanical models for the proposed mechanism.
 
 ## Outcome
-Functional diagrams, board layouts, specifications, Arduino test sketches and mechanical files are preserved. The media document the architecture and subsystem work, not a verified end-to-end autonomous match.
+The original Wokwi sketch combines eight input registers for 64 sensors, LED-matrix updates, chess-engine calls and three-axis motor commands. The archived diagrams and mechanical files document the wider design.
 
 ## Limits
-Piece detection and complete autonomous play are not established as finished by the archive. Planned functions are kept separate from demonstrated subsystem tests.
+This animation is a visual positioning model, not an Arduino firmware emulator or a reproduction of the original Micro-Max engine. Hardware accuracy, collision clearance and full autonomous operation have not been independently validated here.
 
 ## Evidence
-ELE3000 functional specifications and project diagrams; archived Arduino input-register test sketch.
+Original Wokwi control sketch, functional specifications, board diagrams and archived Arduino input-register tests. The source sketch identifies the inherited chess engine separately from the sensor, display and motor-control work.

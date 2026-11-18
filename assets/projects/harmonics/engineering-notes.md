@@ -1,6 +1,6 @@
 # Nonlinear loads and transformers
 
-ELE8458 | Winter 2026 | Team laboratory
+Power quality | Transformer connections | Measurement study
 
 ## Objective
 Investigate the electrical behavior of nonlinear lighting loads and compare transformer connections in a reduced laboratory setup.

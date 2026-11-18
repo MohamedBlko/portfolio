@@ -1,6 +1,6 @@
-# Échiquier automatisé
+# Échiquier mécanique
 
-ELE3000 | Hiver 2023 | Conception et essais de sous-systèmes
+Mécatronique | Commande de mouvement | Conception et essais de sous-systèmes
 
 ## Objectif
 Développer un échiquier physique permettant une expérience de jeu en solo grâce à la détection, à la logique du jeu et aux mouvements mécaniques.
@@ -12,10 +12,10 @@ Développer un échiquier physique permettant une expérience de jeu en solo gr�
 - Préparer des plans de plateau et des modèles mécaniques pour le mécanisme proposé.
 
 ## Résultat
-Les schémas fonctionnels, plans, spécifications, programmes d'essai Arduino et fichiers mécaniques sont conservés. Les médias documentent l'architecture et les sous-systèmes, pas une partie autonome complète validée.
+Le programme Wokwi original combine huit registres d'entrée pour 64 capteurs, l'affichage matriciel DEL, les appels au moteur d'échecs et la commande des trois axes. Les schémas et fichiers mécaniques archivés documentent la conception d'ensemble.
 
 ## Portée et limites
-L'archive ne démontre pas l'achèvement de la détection des pièces ni du jeu entièrement autonome. Les fonctions prévues sont distinguées des essais de sous-systèmes documentés.
+Cette animation est un modèle visuel de positionnement, pas un émulateur Arduino ni une reproduction du moteur Micro-Max original. La précision matérielle, le dégagement des pièces et le fonctionnement autonome complet ne sont pas validés indépendamment ici.
 
 ## Références
-Spécifications fonctionnelles et schémas du projet ELE3000; programme Arduino archivé d'essai du registre d'entrée.
+Programme de commande Wokwi original, spécifications fonctionnelles, schémas du plateau et essais Arduino des registres d'entrée. Le programme distingue le moteur d'échecs réutilisé du travail sur les capteurs, l'affichage et la commande des moteurs.

@@ -1,6 +1,6 @@
-# Biosciences exploration project
+# Gene-expression exploration
 
-Scientific presentation archive | Presentation archive
+Biosciences | Experimental methods | Exploratory study
 
 ## Objective
 Present an exploratory research question about controlling fluorescent-protein expression with a ribozyme.

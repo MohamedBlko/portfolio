@@ -60,6 +60,7 @@ for (const [index, p] of projects.entries()) {
   const next = projects[(index + 1) % projects.length];
   write(`project-${p.slug}.html`, shell(p.title, p.summary, `
     <header class="section case-heading"><a class="case-back" href="projects.html">Back to projects</a><p class="project-type">${esc(p.context)}</p><h1 class="page-title">${esc(p.title)}</h1><p>${esc(p.summary)}</p><dl class="case-facts"><div><dt>Status</dt><dd>${esc(p.status)}</dd></div><div><dt>Focus</dt><dd>${esc(p.category)}</dd></div><div><dt>Tools and methods</dt><dd>${esc(p.tags.join(' / '))}</dd></div></dl></header>
+    ${p.slug === 'chess' ? read('templates/chess-motion.html') : ''}
     ${hero}
     <section class="section case-content case-two-column"><div><h2>Objective</h2><p>${esc(p.objective)}</p><h3>Engineering work</h3><ul>${p.work.map((s) => `<li>${esc(s)}</li>`).join('')}</ul></div><div><h2>Outcome</h2><p>${esc(p.outcome)}</p><h3>Scope and limits</h3><p>${esc(p.limits)}</p></div></section>
     ${p.flow && !p.generic ? `<section class="section case-content"><h2>Engineering workflow</h2>${flow(p)}</section>` : ''}

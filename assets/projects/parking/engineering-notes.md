@@ -6,6 +6,8 @@ ELE1001, team project, 2019.
 
 Represent occupancy in a model with four levels and four spaces per level.
 Report available spaces and the coordinates of the nearest available bay.
+Levels are labeled A, B, C and D; spaces are numbered 1 to 4. For example,
+B3 means level B, space 3. The browser model uses the same A1-D4 notation.
 
 ## Implementation
 

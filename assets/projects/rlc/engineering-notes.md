@@ -1,6 +1,6 @@
 # Single-phase RLC measurements
 
-ELE3400 | Fall 2024 | Team laboratory
+Electrotechnics | Circuit response | Measurement study
 
 ## Objective
 Relate sinusoidal circuit behavior, resonance and power quantities to experimental measurements.

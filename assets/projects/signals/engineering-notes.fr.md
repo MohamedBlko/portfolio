@@ -1,6 +1,6 @@
 # Analyse de signaux en Python
 
-ELE2700 | 2025 et 2026 | Travaux de cours en équipe
+Traitement des signaux | Analyse spectrale | Modèles de signaux
 
 ## Objectif
 Relier le comportement temporel des signaux aux spectres, à la corrélation et aux effets d'échantillonnage.

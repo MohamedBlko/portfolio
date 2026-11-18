@@ -1,6 +1,6 @@
 # Signal analysis in Python
 
-ELE2700 | 2025 and 2026 | Team coursework
+Signal processing | Spectral analysis | Signal models
 
 ## Objective
 Connect time-domain signal behavior to spectra, correlation and sampling effects.
