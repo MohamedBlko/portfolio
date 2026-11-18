@@ -1,0 +1,1572 @@
+{
+  "parking": [
+    {
+      "path": "assets/projects/parking/archive-0001.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0001.jpg",
+      "caption": "Prototype photograph Archive figure 1.",
+      "kind": "image",
+      "width": 1151,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/breadboard.jpg",
+      "thumb": "assets/projects/parking/thumbs/archive-0002.jpg",
+      "caption": "Prototype photograph Archive figure 2.",
+      "kind": "image",
+      "width": 1151,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0003.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0003.jpg",
+      "caption": "Prototype photograph Archive figure 3.",
+      "kind": "image",
+      "width": 1151,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0004.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0004.jpg",
+      "caption": "Project diagram Archive figure 4.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1378
+    },
+    {
+      "path": "assets/projects/parking/archive-0005.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0005.jpg",
+      "caption": "Project diagram Archive figure 5.",
+      "kind": "image",
+      "width": 621,
+      "height": 440
+    },
+    {
+      "path": "assets/projects/parking/archive-0006.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0006.jpg",
+      "caption": "Design note Archive figure 6.",
+      "kind": "image",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0007.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0007.jpg",
+      "caption": "Design note Archive figure 7.",
+      "kind": "image",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0008.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0008.jpg",
+      "caption": "Prototype photograph Archive figure 8.",
+      "kind": "image",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0009.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0009.jpg",
+      "caption": "Project diagram Archive figure 9.",
+      "kind": "image",
+      "width": 1233,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0010.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0010.jpg",
+      "caption": "Design note Archive figure 10.",
+      "kind": "image",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/logic-diagram.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0011.jpg",
+      "caption": "Project diagram Archive figure 11.",
+      "kind": "image",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/parking/archive-0012.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0012.jpg",
+      "caption": "Project diagram Archive figure 12.",
+      "kind": "image",
+      "width": 1182,
+      "height": 845
+    },
+    {
+      "path": "assets/projects/parking/archive-0013.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0013.jpg",
+      "caption": "Project diagram Archive figure 13.",
+      "kind": "image",
+      "width": 590,
+      "height": 498
+    },
+    {
+      "path": "assets/projects/parking/archive-0014.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0014.jpg",
+      "caption": "Project diagram Archive figure 14.",
+      "kind": "image",
+      "width": 611,
+      "height": 327
+    },
+    {
+      "path": "assets/projects/parking/archive-0015.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0015.jpg",
+      "caption": "Project diagram Archive figure 15.",
+      "kind": "image",
+      "width": 1173,
+      "height": 827
+    },
+    {
+      "path": "assets/projects/parking/archive-0016.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0016.jpg",
+      "caption": "Project diagram Archive figure 16.",
+      "kind": "image",
+      "width": 438,
+      "height": 503
+    },
+    {
+      "path": "assets/projects/parking/archive-0017.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0017.jpg",
+      "caption": "Prototype photograph Archive figure 17.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "path": "assets/projects/parking/archive-0018.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0018.jpg",
+      "caption": "Project diagram Archive figure 18.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1233
+    },
+    {
+      "path": "assets/projects/parking/archive-0019.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0019.jpg",
+      "caption": "Project diagram Archive figure 19.",
+      "kind": "image",
+      "width": 1164,
+      "height": 826
+    },
+    {
+      "path": "assets/projects/parking/soldered-board.jpg",
+      "thumb": "assets/projects/parking/thumbs/archive-0020.jpg",
+      "caption": "Prototype photograph Archive figure 20.",
+      "kind": "image",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0021.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0021.jpg",
+      "caption": "Project diagram Archive figure 21.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1141
+    },
+    {
+      "path": "assets/projects/parking/archive-0022.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0022.jpg",
+      "caption": "Project diagram Archive figure 22.",
+      "kind": "image",
+      "width": 716,
+      "height": 574
+    },
+    {
+      "path": "assets/projects/parking/archive-0023.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0023.jpg",
+      "caption": "Prototype photograph Archive figure 23.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1151
+    },
+    {
+      "path": "assets/projects/parking/archive-0024.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0024.jpg",
+      "caption": "Project diagram Archive figure 24.",
+      "kind": "image",
+      "width": 1236,
+      "height": 608
+    },
+    {
+      "path": "assets/projects/parking/archive-0025.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0025.jpg",
+      "caption": "Project diagram Archive figure 25.",
+      "kind": "image",
+      "width": 1236,
+      "height": 608
+    },
+    {
+      "path": "assets/projects/parking/archive-0026.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0026.jpg",
+      "caption": "Design note Archive figure 26.",
+      "kind": "image",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0027.png",
+      "thumb": "assets/projects/parking/thumbs/archive-0027.jpg",
+      "caption": "Design note Archive figure 27.",
+      "kind": "image",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/parking/archive-0029.mp4",
+      "thumb": "assets/projects/parking/thumbs/archive-0029.jpg",
+      "caption": "Silent lab demonstration Archive figure 28.",
+      "kind": "video",
+      "width": 560,
+      "height": 315
+    },
+    {
+      "path": "assets/projects/parking/demonstration.mp4",
+      "thumb": "assets/projects/parking/thumbs/archive-0033.jpg",
+      "caption": "Silent lab demonstration Archive figure 29.",
+      "kind": "video",
+      "width": 560,
+      "height": 315
+    },
+    {
+      "path": "assets/projects/parking/archive-0034.mp4",
+      "thumb": "assets/projects/parking/thumbs/archive-0034.jpg",
+      "caption": "Silent lab demonstration Archive figure 30.",
+      "kind": "video",
+      "width": 560,
+      "height": 315
+    }
+  ],
+  "plc": [
+    {
+      "path": "assets/projects/plc/archive-0057.png",
+      "thumb": "assets/projects/plc/thumbs/archive-0057.jpg",
+      "caption": "Archived PLC or GRAFCET reference Archive figure 1.",
+      "kind": "image",
+      "width": 527,
+      "height": 236
+    },
+    {
+      "path": "assets/projects/plc/archive-0058.png",
+      "thumb": "assets/projects/plc/thumbs/archive-0058.jpg",
+      "caption": "Archived PLC or GRAFCET reference Archive figure 2.",
+      "kind": "image",
+      "width": 912,
+      "height": 1920
+    },
+    {
+      "path": "assets/projects/plc/archive-0059.png",
+      "thumb": "assets/projects/plc/thumbs/archive-0059.jpg",
+      "caption": "Archived PLC or GRAFCET reference Archive figure 3.",
+      "kind": "image",
+      "width": 1160,
+      "height": 1640
+    },
+    {
+      "path": "assets/projects/plc/archive-0060.png",
+      "thumb": "assets/projects/plc/thumbs/archive-0060.jpg",
+      "caption": "Archived PLC or GRAFCET reference Archive figure 4.",
+      "kind": "image",
+      "width": 1179,
+      "height": 1323
+    },
+    {
+      "path": "assets/projects/plc/plc-05-01.png",
+      "thumb": "assets/projects/plc/thumbs/plc-05-01.jpg",
+      "caption": "Program organization from the team report (PDF page 5). Archive figure 5.",
+      "kind": "image",
+      "width": 799,
+      "height": 1298
+    },
+    {
+      "path": "assets/projects/plc/plc-07-02.png",
+      "thumb": "assets/projects/plc/thumbs/plc-07-02.jpg",
+      "caption": "Sequence-choice logic from the team report (PDF page 7). Archive figure 6.",
+      "kind": "image",
+      "width": 1292,
+      "height": 770
+    },
+    {
+      "path": "assets/projects/plc/plc-08-03.png",
+      "thumb": "assets/projects/plc/thumbs/plc-08-03.jpg",
+      "caption": "Container and target-height selection blocks (PDF page 8). Archive figure 7.",
+      "kind": "image",
+      "width": 1411,
+      "height": 1496
+    },
+    {
+      "path": "assets/projects/plc/plc-09-04.png",
+      "thumb": "assets/projects/plc/thumbs/plc-09-04.jpg",
+      "caption": "Timing and setpoint validation blocks (PDF page 9). Archive figure 8.",
+      "kind": "image",
+      "width": 1411,
+      "height": 1496
+    }
+  ],
+  "palan": [
+    {
+      "path": "assets/projects/palan/archive-0061.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0061.jpg",
+      "caption": "Saved crane-control figure Archive figure 1.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1152
+    },
+    {
+      "path": "assets/projects/palan/archive-0062.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0062.jpg",
+      "caption": "Saved crane-control figure Archive figure 2.",
+      "kind": "image",
+      "width": 1294,
+      "height": 862
+    },
+    {
+      "path": "assets/projects/palan/archive-0063.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0063.jpg",
+      "caption": "Saved crane-control figure Archive figure 3.",
+      "kind": "image",
+      "width": 1450,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/palan/response-r1.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0064.jpg",
+      "caption": "Saved crane-control figure Archive figure 4.",
+      "kind": "image",
+      "width": 1280,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0065.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0065.jpg",
+      "caption": "Saved crane-control figure Archive figure 5.",
+      "kind": "image",
+      "width": 1297,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0066.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0066.jpg",
+      "caption": "Saved crane-control figure Archive figure 6.",
+      "kind": "image",
+      "width": 1297,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0067.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0067.jpg",
+      "caption": "Saved crane-control figure Archive figure 7.",
+      "kind": "image",
+      "width": 1297,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0068.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0068.jpg",
+      "caption": "Saved crane-control figure Archive figure 8.",
+      "kind": "image",
+      "width": 1297,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0069.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0069.jpg",
+      "caption": "Saved crane-control figure Archive figure 9.",
+      "kind": "image",
+      "width": 1294,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0070.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0070.jpg",
+      "caption": "Saved crane-control figure Archive figure 10.",
+      "kind": "image",
+      "width": 1294,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0071.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0071.jpg",
+      "caption": "Saved crane-control figure Archive figure 11.",
+      "kind": "image",
+      "width": 1290,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/archive-0072.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0072.jpg",
+      "caption": "Saved crane-control figure Archive figure 12.",
+      "kind": "image",
+      "width": 1292,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/palan/short-cable.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0073.jpg",
+      "caption": "Saved crane-control figure Archive figure 13.",
+      "kind": "image",
+      "width": 1148,
+      "height": 630
+    },
+    {
+      "path": "assets/projects/palan/long-cable.png",
+      "thumb": "assets/projects/palan/thumbs/archive-0074.jpg",
+      "caption": "Saved crane-control figure Archive figure 14.",
+      "kind": "image",
+      "width": 1043,
+      "height": 630
+    }
+  ],
+  "harmonics": [
+    {
+      "path": "assets/projects/harmonics/archive-0081.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0081.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 1.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1264
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0082.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0082.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 2.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1433
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0083.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0083.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 3.",
+      "kind": "image",
+      "width": 1152,
+      "height": 2048
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0084.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0084.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 4.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1505
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0085.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0085.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 5.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1264
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0086.mp4",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0086.jpg",
+      "caption": "Silent measurement clip Archive figure 6.",
+      "kind": "video",
+      "width": 560,
+      "height": 315
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0087.mp4",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0087.jpg",
+      "caption": "Silent measurement clip Archive figure 7.",
+      "kind": "video",
+      "width": 560,
+      "height": 315
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0088.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0088.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 8.",
+      "kind": "image",
+      "width": 1235,
+      "height": 1235
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0089.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0089.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 9.",
+      "kind": "image",
+      "width": 2048,
+      "height": 1433
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0090.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0090.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 10.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0091.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0091.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 11.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0092.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0092.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 12.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0093.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0093.jpg",
+      "caption": "Saved response figure Archive figure 13.",
+      "kind": "image",
+      "width": 1397,
+      "height": 912
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0094.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0094.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 14.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0095.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0095.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 15.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0096.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0096.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 16.",
+      "kind": "image",
+      "width": 2000,
+      "height": 1799
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0097.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0097.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 17.",
+      "kind": "image",
+      "width": 2000,
+      "height": 538
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0098.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0098.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 18.",
+      "kind": "image",
+      "width": 2000,
+      "height": 468
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0099.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0099.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 19.",
+      "kind": "image",
+      "width": 2000,
+      "height": 468
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0100.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0100.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 20.",
+      "kind": "image",
+      "width": 2000,
+      "height": 437
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0101.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0101.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 21.",
+      "kind": "image",
+      "width": 2000,
+      "height": 867
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0102.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0102.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 22.",
+      "kind": "image",
+      "width": 2000,
+      "height": 867
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0103.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0103.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 23.",
+      "kind": "image",
+      "width": 2000,
+      "height": 437
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0104.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0104.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 24.",
+      "kind": "image",
+      "width": 2000,
+      "height": 1005
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0105.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0105.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 25.",
+      "kind": "image",
+      "width": 2000,
+      "height": 1415
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0108.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0108.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 26.",
+      "kind": "image",
+      "width": 2000,
+      "height": 1415
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0109.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0109.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 27.",
+      "kind": "image",
+      "width": 2000,
+      "height": 1415
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0110.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0110.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 28.",
+      "kind": "image",
+      "width": 2000,
+      "height": 833
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0111.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0111.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 29.",
+      "kind": "image",
+      "width": 2000,
+      "height": 833
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0184.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0184.jpg",
+      "caption": "Saved response figure Archive figure 30.",
+      "kind": "image",
+      "width": 1397,
+      "height": 912
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0236.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0236.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 31.",
+      "kind": "image",
+      "width": 2000,
+      "height": 468
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0237.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0237.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 32.",
+      "kind": "image",
+      "width": 2000,
+      "height": 468
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0238.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0238.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 33.",
+      "kind": "image",
+      "width": 2000,
+      "height": 833
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0239.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0239.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 34.",
+      "kind": "image",
+      "width": 2000,
+      "height": 468
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0240.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0240.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 35.",
+      "kind": "image",
+      "width": 2000,
+      "height": 468
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0242.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0242.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 36.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0243.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0243.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 37.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0244.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0244.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 38.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0245.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0245.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 39.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0248.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0248.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 40.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0249.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0249.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 41.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0250.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0250.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 42.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0251.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0251.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 43.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0254.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0254.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 44.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0255.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0255.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 45.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0256.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0256.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 46.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0257.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0257.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 47.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0258.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0258.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 48.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0259.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0259.jpg",
+      "caption": "Recorded measurement capture Archive figure 49.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0260.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0260.jpg",
+      "caption": "Recorded measurement capture Archive figure 50.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0261.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0261.jpg",
+      "caption": "Recorded measurement capture Archive figure 51.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0262.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0262.jpg",
+      "caption": "Recorded measurement capture Archive figure 52.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0263.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0263.jpg",
+      "caption": "Recorded measurement capture Archive figure 53.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0266.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0266.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 54.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0267.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0267.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 55.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0268.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0268.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 56.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0269.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0269.jpg",
+      "caption": "Recorded measurement capture Archive figure 57.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0271.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0271.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 58.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0272.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0272.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 59.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0310.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0310.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 60.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/archive-0311.png",
+      "thumb": "assets/projects/harmonics/thumbs/archive-0311.jpg",
+      "caption": "Saved transformer and load connection diagram Archive figure 61.",
+      "kind": "image",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/projects/harmonics/harmonics-08-10.png",
+      "thumb": "assets/projects/harmonics/thumbs/harmonics-08-10.jpg",
+      "caption": "Recorded oscilloscope captures recovered from the lab report (PDF page 8). Archive figure 62.",
+      "kind": "image",
+      "width": 1296,
+      "height": 1646
+    },
+    {
+      "path": "assets/projects/harmonics/harmonics-11-11.png",
+      "thumb": "assets/projects/harmonics/thumbs/harmonics-11-11.jpg",
+      "caption": "Harmonic amplitudes recorded in the lab report (PDF page 11). Archive figure 63.",
+      "kind": "image",
+      "width": 1332,
+      "height": 675
+    }
+  ],
+  "distribution": [
+    {
+      "path": "assets/projects/distribution/archive-0106.png",
+      "thumb": "assets/projects/distribution/thumbs/archive-0106.jpg",
+      "caption": "Project diagram Archive figure 1.",
+      "kind": "image",
+      "width": 2000,
+      "height": 771
+    },
+    {
+      "path": "assets/projects/distribution/archive-0107.png",
+      "thumb": "assets/projects/distribution/thumbs/archive-0107.jpg",
+      "caption": "Project diagram Archive figure 2.",
+      "kind": "image",
+      "width": 2000,
+      "height": 982
+    },
+    {
+      "path": "assets/projects/distribution/motor-02-12.png",
+      "thumb": "assets/projects/distribution/thumbs/motor-02-12.jpg",
+      "caption": "Equivalent motor circuit from a coursework calculation (PDF page 2). Archive figure 3.",
+      "kind": "image",
+      "width": 1214,
+      "height": 503
+    },
+    {
+      "path": "assets/projects/distribution/distribution-02-13.png",
+      "thumb": "assets/projects/distribution/thumbs/distribution-02-13.jpg",
+      "caption": "Load-calculation excerpt from coursework (PDF page 2). Archive figure 4.",
+      "kind": "image",
+      "width": 1291,
+      "height": 1907
+    },
+    {
+      "path": "assets/projects/distribution/transformer-03-14.png",
+      "thumb": "assets/projects/distribution/thumbs/transformer-03-14.jpg",
+      "caption": "Three-phase transformer circuit from coursework (PDF page 3). Archive figure 5.",
+      "kind": "image",
+      "width": 1214,
+      "height": 699
+    }
+  ],
+  "signals": [
+    {
+      "path": "assets/projects/signals/archive-0113.png",
+      "thumb": "assets/projects/signals/thumbs/archive-0113.jpg",
+      "caption": "Archived Fourier-analysis note Archive figure 1.",
+      "kind": "image",
+      "width": 632,
+      "height": 808
+    },
+    {
+      "path": "assets/projects/signals/signals-chirp-03-15.png",
+      "thumb": "assets/projects/signals/thumbs/signals-chirp-03-15.jpg",
+      "caption": "Windowed chirp and sinusoid plots from the notebook export (PDF page 3). Archive figure 2.",
+      "kind": "image",
+      "width": 1238,
+      "height": 1567
+    },
+    {
+      "path": "assets/projects/signals/signals-chirp-04-16.png",
+      "thumb": "assets/projects/signals/thumbs/signals-chirp-04-16.jpg",
+      "caption": "Spectrum comparison from the notebook export (PDF page 4). Archive figure 3.",
+      "kind": "image",
+      "width": 1246,
+      "height": 805
+    },
+    {
+      "path": "assets/projects/signals/signals-chirp-05-17.png",
+      "thumb": "assets/projects/signals/thumbs/signals-chirp-05-17.jpg",
+      "caption": "Saved black-box response plots (PDF page 5). Archive figure 4.",
+      "kind": "image",
+      "width": 1399,
+      "height": 858
+    },
+    {
+      "path": "assets/projects/signals/signals-radar-06-18.png",
+      "thumb": "assets/projects/signals/thumbs/signals-radar-06-18.jpg",
+      "caption": "Radar correlation plots from the notebook export (PDF page 6). Archive figure 5.",
+      "kind": "image",
+      "width": 1399,
+      "height": 1065
+    },
+    {
+      "path": "assets/projects/signals/signals-radar-07-19.png",
+      "thumb": "assets/projects/signals/thumbs/signals-radar-07-19.jpg",
+      "caption": "Saved sinusoidal correlation comparison (PDF page 7). Archive figure 6.",
+      "kind": "image",
+      "width": 1399,
+      "height": 858
+    }
+  ],
+  "arc-flash": [
+    {
+      "path": "assets/projects/arc-flash/archive-0114.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0114.jpg",
+      "caption": "Time-current protection curve Archive figure 1.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0115.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0115.jpg",
+      "caption": "Time-current protection curve Archive figure 2.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1350
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0116.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0116.jpg",
+      "caption": "Time-current protection curve Archive figure 3.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0117.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0117.jpg",
+      "caption": "Time-current protection curve Archive figure 4.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0118.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0118.jpg",
+      "caption": "Time-current protection curve Archive figure 5.",
+      "kind": "image",
+      "width": 1109,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0119.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0119.jpg",
+      "caption": "Time-current protection curve Archive figure 6.",
+      "kind": "image",
+      "width": 1109,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0120.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0120.jpg",
+      "caption": "Time-current protection curve Archive figure 7.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0121.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0121.jpg",
+      "caption": "Time-current protection curve Archive figure 8.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0122.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0122.jpg",
+      "caption": "Time-current protection curve Archive figure 9.",
+      "kind": "image",
+      "width": 1099,
+      "height": 1276
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0123.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0123.jpg",
+      "caption": "Time-current protection curve Archive figure 10.",
+      "kind": "image",
+      "width": 1096,
+      "height": 1276
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0124.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0124.jpg",
+      "caption": "Time-current protection curve Archive figure 11.",
+      "kind": "image",
+      "width": 1046,
+      "height": 1278
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0125.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0125.jpg",
+      "caption": "Time-current protection curve Archive figure 12.",
+      "kind": "image",
+      "width": 1046,
+      "height": 1278
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0126.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0126.jpg",
+      "caption": "Time-current protection curve Archive figure 13.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0127.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0127.jpg",
+      "caption": "Time-current protection curve Archive figure 14.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0128.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0128.jpg",
+      "caption": "Time-current protection curve Archive figure 15.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0129.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0129.jpg",
+      "caption": "Time-current protection curve Archive figure 16.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0130.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0130.jpg",
+      "caption": "Time-current protection curve Archive figure 17.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0131.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0131.jpg",
+      "caption": "Time-current protection curve Archive figure 18.",
+      "kind": "image",
+      "width": 1045,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0132.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0132.jpg",
+      "caption": "Time-current protection curve Archive figure 19.",
+      "kind": "image",
+      "width": 1105,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/archive-0133.png",
+      "thumb": "assets/projects/arc-flash/thumbs/archive-0133.jpg",
+      "caption": "Time-current protection curve Archive figure 20.",
+      "kind": "image",
+      "width": 1105,
+      "height": 1277
+    },
+    {
+      "path": "assets/projects/arc-flash/arc-03-09.png",
+      "thumb": "assets/projects/arc-flash/thumbs/arc-03-09.jpg",
+      "caption": "Input table from the academic arc-flash report (PDF page 3). Archive figure 21.",
+      "kind": "image",
+      "width": 1562,
+      "height": 799
+    }
+  ],
+  "shoe": [
+    {
+      "path": "assets/projects/shoe/contour.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0312.jpg",
+      "caption": "Saved response figure Archive figure 1.",
+      "kind": "image",
+      "width": 285,
+      "height": 180
+    },
+    {
+      "path": "assets/projects/shoe/marker.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0313.jpg",
+      "caption": "Calibration reference Archive figure 2.",
+      "kind": "image",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "path": "assets/projects/shoe/measurement-white.jpg",
+      "thumb": "assets/projects/shoe/thumbs/archive-0314.jpg",
+      "caption": "Recorded measurement capture Archive figure 3.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0315.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0315.jpg",
+      "caption": "Recorded measurement capture Archive figure 4.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0316.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0316.jpg",
+      "caption": "Recorded measurement capture Archive figure 5.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0317.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0317.jpg",
+      "caption": "Recorded measurement capture Archive figure 6.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0318.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0318.jpg",
+      "caption": "Recorded measurement capture Archive figure 7.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0319.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0319.jpg",
+      "caption": "Recorded measurement capture Archive figure 8.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0320.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0320.jpg",
+      "caption": "Recorded measurement capture Archive figure 9.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/measurement-brown.jpg",
+      "thumb": "assets/projects/shoe/thumbs/archive-0321.jpg",
+      "caption": "Recorded measurement capture Archive figure 10.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0322.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0322.jpg",
+      "caption": "Recorded measurement capture Archive figure 11.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/projects/shoe/archive-0323.png",
+      "thumb": "assets/projects/shoe/thumbs/archive-0323.jpg",
+      "caption": "Recorded measurement capture Archive figure 12.",
+      "kind": "image",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "chess": [
+    {
+      "path": "assets/projects/chess/archive-0329.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0329.jpg",
+      "caption": "Archived chess-board functional design Archive figure 1.",
+      "kind": "image",
+      "width": 831,
+      "height": 589
+    },
+    {
+      "path": "assets/projects/chess/archive-0330.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0330.jpg",
+      "caption": "Archived chess-board functional design Archive figure 2.",
+      "kind": "image",
+      "width": 2000,
+      "height": 1125
+    },
+    {
+      "path": "assets/projects/chess/archive-0331.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0331.jpg",
+      "caption": "Archived chess-board functional design Archive figure 3.",
+      "kind": "image",
+      "width": 1120,
+      "height": 550
+    },
+    {
+      "path": "assets/projects/chess/archive-0332.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0332.jpg",
+      "caption": "Archived chess-board functional design Archive figure 4.",
+      "kind": "image",
+      "width": 1182,
+      "height": 558
+    },
+    {
+      "path": "assets/projects/chess/archive-0337.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0337.jpg",
+      "caption": "Archived chess-board functional design Archive figure 5.",
+      "kind": "image",
+      "width": 2200,
+      "height": 1836
+    },
+    {
+      "path": "assets/projects/chess/archive-0338.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0338.jpg",
+      "caption": "Archived chess-board functional design Archive figure 6.",
+      "kind": "image",
+      "width": 2200,
+      "height": 1618
+    },
+    {
+      "path": "assets/projects/chess/archive-0339.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0339.jpg",
+      "caption": "Archived chess-board functional design Archive figure 7.",
+      "kind": "image",
+      "width": 2200,
+      "height": 894
+    },
+    {
+      "path": "assets/projects/chess/archive-0340.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0340.jpg",
+      "caption": "Archived chess-board functional design Archive figure 8.",
+      "kind": "image",
+      "width": 2000,
+      "height": 812
+    },
+    {
+      "path": "assets/projects/chess/archive-0341.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0341.jpg",
+      "caption": "Archived chess-board functional design Archive figure 9.",
+      "kind": "image",
+      "width": 2000,
+      "height": 631
+    },
+    {
+      "path": "assets/projects/chess/archive-0342.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0342.jpg",
+      "caption": "Archived chess-board functional design Archive figure 10.",
+      "kind": "image",
+      "width": 2200,
+      "height": 1711
+    },
+    {
+      "path": "assets/projects/chess/archive-0343.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0343.jpg",
+      "caption": "Archived chess-board functional design Archive figure 11.",
+      "kind": "image",
+      "width": 2200,
+      "height": 1283
+    },
+    {
+      "path": "assets/projects/chess/archive-0344.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0344.jpg",
+      "caption": "Archived chess-board functional design Archive figure 12.",
+      "kind": "image",
+      "width": 2200,
+      "height": 695
+    },
+    {
+      "path": "assets/projects/chess/archive-0345.png",
+      "thumb": "assets/projects/chess/thumbs/archive-0345.jpg",
+      "caption": "Archived chess-board functional design Archive figure 13.",
+      "kind": "image",
+      "width": 2200,
+      "height": 1555
+    }
+  ],
+  "stm32": [
+    {
+      "path": "assets/projects/stm32/stm32-01-05.png",
+      "thumb": "assets/projects/stm32/thumbs/stm32-01-05.jpg",
+      "caption": "Wiring notes from the project PDF (PDF page 1). Archive figure 1.",
+      "kind": "image",
+      "width": 1580,
+      "height": 2082
+    },
+    {
+      "path": "assets/projects/stm32/stm32-02-06.png",
+      "thumb": "assets/projects/stm32/thumbs/stm32-02-06.jpg",
+      "caption": "Prototype montage recovered from the project PDF (PDF page 2). Archive figure 2.",
+      "kind": "image",
+      "width": 1563,
+      "height": 1871
+    }
+  ],
+  "embedded-labs": [
+    {
+      "path": "assets/projects/embedded-labs/microcontrollers-04-07.png",
+      "thumb": "assets/projects/embedded-labs/thumbs/microcontrollers-04-07.jpg",
+      "caption": "Timer setup reference from the ELE3312 lab handout (PDF page 4). Archive figure 1.",
+      "kind": "image",
+      "width": 1394,
+      "height": 1650
+    },
+    {
+      "path": "assets/projects/embedded-labs/microcontrollers-05-08.png",
+      "thumb": "assets/projects/embedded-labs/thumbs/microcontrollers-05-08.jpg",
+      "caption": "ADC and DMA setup reference from the lab handout (PDF page 5). Archive figure 2.",
+      "kind": "image",
+      "width": 1377,
+      "height": 1584
+    }
+  ],
+  "rlc": [
+    {
+      "path": "assets/projects/rlc/rlc-04-22.png",
+      "thumb": "assets/projects/rlc/thumbs/rlc-04-22.jpg",
+      "caption": "Series RLC diagram from the team lab report (PDF page 4). Archive figure 1.",
+      "kind": "image",
+      "width": 820,
+      "height": 462
+    },
+    {
+      "path": "assets/projects/rlc/rlc-07-23.png",
+      "thumb": "assets/projects/rlc/thumbs/rlc-07-23.jpg",
+      "caption": "Parallel RLC diagram from the team lab report (PDF page 7). Archive figure 2.",
+      "kind": "image",
+      "width": 606,
+      "height": 299
+    },
+    {
+      "path": "assets/projects/rlc/rlc-10-24.png",
+      "thumb": "assets/projects/rlc/thumbs/rlc-10-24.jpg",
+      "caption": "Resistive-load measurements from the lab report (PDF page 10). Archive figure 3.",
+      "kind": "image",
+      "width": 1360,
+      "height": 418
+    },
+    {
+      "path": "assets/projects/rlc/rlc-13-25.png",
+      "thumb": "assets/projects/rlc/thumbs/rlc-13-25.jpg",
+      "caption": "Parallel RLC measurements and calculations (PDF page 13). Archive figure 4.",
+      "kind": "image",
+      "width": 1309,
+      "height": 1188
+    }
+  ],
+  "servo": [
+    {
+      "path": "assets/projects/servo/servo-04-26.png",
+      "thumb": "assets/projects/servo/thumbs/servo-04-26.jpg",
+      "caption": "Graphical servo identification method one (PDF page 4). Archive figure 1.",
+      "kind": "image",
+      "width": 804,
+      "height": 609
+    },
+    {
+      "path": "assets/projects/servo/servo-04-27.png",
+      "thumb": "assets/projects/servo/thumbs/servo-04-27.jpg",
+      "caption": "Graphical servo identification method two (PDF page 4). Archive figure 2.",
+      "kind": "image",
+      "width": 871,
+      "height": 610
+    }
+  ],
+  "networks": [
+    {
+      "path": "assets/projects/networks/networks-08-28.png",
+      "thumb": "assets/projects/networks/thumbs/networks-08-28.jpg",
+      "caption": "Three-bus schematic reproduced in the coursework report (PDF page 8). Archive figure 1.",
+      "kind": "image",
+      "width": 1214,
+      "height": 612
+    },
+    {
+      "path": "assets/projects/networks/networks-10-29.png",
+      "thumb": "assets/projects/networks/thumbs/networks-10-29.jpg",
+      "caption": "Saved voltage-versus-load plot from the report (PDF page 10). Archive figure 2.",
+      "kind": "image",
+      "width": 1122,
+      "height": 774
+    },
+    {
+      "path": "assets/projects/networks/networks-11-30.png",
+      "thumb": "assets/projects/networks/thumbs/networks-11-30.jpg",
+      "caption": "Saved three-bus operating case (PDF page 11). Archive figure 3.",
+      "kind": "image",
+      "width": 1122,
+      "height": 540
+    },
+    {
+      "path": "assets/projects/networks/networks-12-31.png",
+      "thumb": "assets/projects/networks/thumbs/networks-12-31.jpg",
+      "caption": "Saved three-bus case near the voltage crossover (PDF page 12). Archive figure 4.",
+      "kind": "image",
+      "width": 1122,
+      "height": 554
+    }
+  ],
+  "biosciences": [
+    {
+      "path": "assets/projects/biosciences/biosciences-03-32.png",
+      "thumb": "assets/projects/biosciences/thumbs/biosciences-03-32.jpg",
+      "caption": "Research question from the archived biosciences presentation (PDF page 3). Archive figure 1.",
+      "kind": "image",
+      "width": 2400,
+      "height": 1350
+    },
+    {
+      "path": "assets/projects/biosciences/biosciences-05-33.png",
+      "thumb": "assets/projects/biosciences/thumbs/biosciences-05-33.jpg",
+      "caption": "Experimental workflow from the archived presentation (PDF page 5). Archive figure 2.",
+      "kind": "image",
+      "width": 2400,
+      "height": 1350
+    },
+    {
+      "path": "assets/projects/biosciences/biosciences-06-34.png",
+      "thumb": "assets/projects/biosciences/thumbs/biosciences-06-34.jpg",
+      "caption": "Gel images shown in the archived presentation (PDF page 6). Archive figure 3.",
+      "kind": "image",
+      "width": 2400,
+      "height": 1350
+    },
+    {
+      "path": "assets/projects/biosciences/biosciences-08-35.png",
+      "thumb": "assets/projects/biosciences/thumbs/biosciences-08-35.jpg",
+      "caption": "Fluorescence comparison from the archived presentation (PDF page 8). Archive figure 4.",
+      "kind": "image",
+      "width": 2400,
+      "height": 1350
+    }
+  ],
+  "telecom": [
+    {
+      "path": "assets/projects/telecom/telecom-06-36.png",
+      "thumb": "assets/projects/telecom/thumbs/telecom-06-36.jpg",
+      "caption": "Signal-analysis block diagram from the lab handout (PDF page 6). Archive figure 1.",
+      "kind": "image",
+      "width": 935,
+      "height": 352
+    }
+  ],
+  "yocto": [
+    {
+      "path": "assets/projects/yocto/yocto-layer.png",
+      "thumb": "assets/projects/yocto/thumbs/yocto-layer.jpg",
+      "caption": "Typeset excerpt of the archived layer.conf configuration. Archive figure 1.",
+      "kind": "image",
+      "width": 1580,
+      "height": 540
+    }
+  ]
+}

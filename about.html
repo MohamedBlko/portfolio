@@ -7,7 +7,7 @@
     <title>About | Mohamed Marou Belko</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Urbanist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&amp;family=Urbanist:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -18,16 +18,16 @@
         <span class="brand-symbol">MB</span>
         <span class="brand-copy"><strong>Mohamed Marou Belko</strong><small>Electrical Engineer in Training</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a>
+        <a href="about.html" aria-current="page">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a>
       </nav>
-    </header>
+    <div class="header-controls"><div class="language-switch" role="group" aria-label="Language" hidden><button type="button" data-language="fr" lang="fr" aria-label="Français" aria-pressed="false">FR</button><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button></div><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+      </div></header>
     <main class="page-main">
       <section class="section page-hero about-section" aria-labelledby="about-title">
         <div class="section-header">
           <p class="eyebrow">About</p>
-          <h1 id="about-title" class="page-title">Engineer first. Practical, analytical, field-aware.</h1>
+          <h1 id="about-title" class="page-title">About me</h1>
           <p>
             Electrical engineer in training passionate about power systems, electrical design,
             industrial automation and reliable technical documentation. I enjoy solving engineering
@@ -35,17 +35,17 @@
           </p>
         </div>
         <div class="profile-grid">
-          <div class="profile-photo" aria-label="Professional photo placeholder"><span>MB</span></div>
+          <div class="profile-photo" aria-label="Mohamed Marou Belko initials"><span>MB</span></div>
           <div class="profile-facts">
-            <article><span>Degree</span><strong>B.Eng. Electrical Engineering</strong><p>Polytechnique Montreal, expected 2026.</p></article>
+            <article><span>Education</span><strong>B.Eng. Electrical Engineering</strong><p>Polytechnique Montreal, expected 2026.</p><p>College diploma, College de Maisonneuve, 2019.</p></article>
             <article><span>Location</span><strong>Montreal, Quebec</strong><p>Available for junior engineer, CPI/EIT, automation and electrical design roles.</p></article>
             <article><span>Languages</span><strong>French | English</strong><p>Japanese in progress.</p></article>
             <article><span>Mobility</span><strong>Class 5 driver license</strong><p>Open to site visits, field work and client-facing technical work.</p></article>
           </div>
         </div>
+        <div class="profile-summary"><h2>From analysis to practical work</h2><p>At Grupo Bimbo, I worked on production-equipment troubleshooting and maintenance follow-up. At Hydro-Quebec, I organized technical information with Excel and VBA. At Lockheed Martin, I worked with requirements, interfaces and SysML models.</p><p>My project work connects those experiences with PLC sequencing, state-space control, embedded Linux and computer vision.</p><div class="hero-actions"><a class="button primary" href="projects.html">View Projects</a><a class="button secondary" href="assets/CV_Mohamed_Marou_Belko_Generic.pdf">Resume (PDF, EN)</a></div></div>
       </section>
     </main>
-    <footer class="site-footer"><p>Phone: (438) 878-0897 | Email: mohamed_belko@outlook.com | LinkedIn: mohamed-belko-857b651a1</p><p>&copy; <span id="year"></span> Mohamed Marou Belko.</p></footer>
-    <script src="script.js"></script>
+    <footer class="site-footer"><nav aria-label="Contact and resume"><a href="tel:+14388780897">(438) 878-0897</a><a href="mailto:mohamed_belko@outlook.com">mohamed_belko@outlook.com</a><a href="https://www.linkedin.com/in/mohamed-belko-857b651a1">LinkedIn</a><a href="assets/CV_Mohamed_Marou_Belko_Generic.pdf">Resume (PDF, EN)</a></nav><p>© <span id="year"></span> Mohamed Marou Belko.</p></footer><script src="translations.js"></script><script src="i18n.js"></script><script src="script.js"></script>
   </body>
 </html>

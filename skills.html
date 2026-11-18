@@ -7,7 +7,7 @@
     <title>Skills | Mohamed Marou Belko</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Urbanist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&amp;family=Urbanist:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -15,36 +15,31 @@
     <div class="atmosphere" aria-hidden="true"></div>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Mohamed Marou Belko home"><span class="brand-symbol">MB</span><span class="brand-copy"><strong>Mohamed Marou Belko</strong><small>Electrical Engineer in Training</small></span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a></nav>
-    </header>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="about.html">About</a><a href="skills.html" aria-current="page">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a></nav>
+    <div class="header-controls"><div class="language-switch" role="group" aria-label="Language" hidden><button type="button" data-language="fr" lang="fr" aria-label="Français" aria-pressed="false">FR</button><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button></div><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+      </div></header>
     <main class="page-main">
       <section class="section page-hero" aria-labelledby="skills-title">
         <div class="section-header">
           <p class="eyebrow">Technical skills</p>
-          <h1 id="skills-title" class="page-title">Organized around electrical engineering work.</h1>
-          <p>Recruiters should see the core domains immediately: design, distribution, protection, automation, software tools and standards.</p>
+          <h1 id="skills-title" class="page-title">Technical skills</h1>
+          <p>Methods and tools used in academic projects, prototypes and professional experience.</p>
         </div>
         <div class="skill-category-grid">
-          <article class="skill-category"><span>01</span><h3>Electrical Design</h3><ul><li>Power distribution</li><li>Protection and control</li><li>Motor control</li><li>Grounding and electrical safety</li><li>Load calculations and cable sizing</li></ul></article>
-          <article class="skill-category"><span>02</span><h3>Industrial Automation</h3><ul><li>PLC programming</li><li>HMI / SCADA</li><li>Instrumentation</li><li>Sequence logic</li><li>Commissioning tests</li></ul></article>
-          <article class="skill-category"><span>03</span><h3>Energy Systems</h3><ul><li>Renewable energy concepts</li><li>Power electronics</li><li>Redundant power supply</li><li>Industrial maintenance reliability</li><li>Electrical machines</li></ul></article>
+          <article class="skill-category"><span>01</span><h3>Electrical Systems</h3><ul><li>Power distribution and load calculations</li><li>Protection and arc-flash coursework</li><li>Motors and transformer connections</li><li>RLC circuits and measurements</li><li>Industrial electrical troubleshooting</li></ul><a href="project-networks.html">Power-flow case study</a></article>
+          <article class="skill-category"><span>02</span><h3>Industrial Automation</h3><ul><li>Schneider Modicon M340</li><li>Ladder, FBD, SFC and Structured Text</li><li>HMI / SCADA and instrumentation</li><li>GRAFCET and operating modes</li><li>Sequence tests and interlocks</li></ul><a href="project-plc.html">PLC case study</a></article>
+          <article class="skill-category"><span>03</span><h3>Control and Analysis</h3><ul><li>State-space modeling and discretization</li><li>Pole placement and LQR</li><li>Kalman state estimation</li><li>Fourier analysis and correlation</li><li>MATLAB / Simulink and Python</li></ul><a href="project-palan.html">Control case study</a></article>
           <article class="skill-category"><span>04</span><h3>Embedded Systems</h3><ul><li>C/C++ firmware</li><li>STM32 / ESP32 / Odroid-C2</li><li>GPIO, timers and interrupts</li><li>TCP/IP and Linux embedded</li><li>OpenCV and sensor integration</li></ul></article>
         </div>
-        <div class="software-board" aria-label="Engineering software levels">
+        <div class="software-board" aria-label="Engineering tools and methods">
           <article>
             <h3>Software</h3>
-            <div class="level"><span>Excel / VBA</span><meter min="0" max="100" value="90">90%</meter></div>
-            <div class="level"><span>MATLAB / Simulink</span><meter min="0" max="100" value="82">82%</meter></div>
-            <div class="level"><span>PLC Schneider</span><meter min="0" max="100" value="78">78%</meter></div>
-            <div class="level"><span>AutoCAD / EasyEDA / LTspice</span><meter min="0" max="100" value="72">72%</meter></div>
-            <div class="level"><span>Python / C / C++</span><meter min="0" max="100" value="80">80%</meter></div>
+            <dl class="tool-evidence"><div><dt>Excel / VBA</dt><dd>Technical tracking and data organization at Hydro-Quebec.</dd></div><div><dt>MATLAB / Simulink</dt><dd>Control models, saved simulations and signal-processing exercises.</dd></div><div><dt>Python / C / C++</dt><dd>Computer vision, embedded applications and data-processing scripts.</dd></div><div><dt>AutoCAD / EasyEDA / LTspice</dt><dd>Drawing review, schematics and circuit-study tools listed in my resume.</dd></div><div><dt>Yocto / CMake / Linux</dt><dd>Embedded build configuration, target environments and debugging.</dd></div></dl>
           </article>
-          <article><h3>Standards and Methods</h3><ul class="standard-list"><li>IEC</li><li>IEEE</li><li>CSA</li><li>CEC</li><li>NFPA 70 awareness</li><li>SysML / MBSE</li></ul></article>
+          <article><h3>Systems and Documentation</h3><ul class="standard-list"><li>Cameo Systems Modeler / SysML / UML</li><li>Requirements and interface traceability</li><li>Technical reports and test procedures</li><li>Doxygen and build documentation</li><li>I/O lists and design documentation</li></ul><p>Protection and safety studies are academic work, not professional certifications or approved field assessments.</p></article>
         </div>
       </section>
     </main>
-    <footer class="site-footer"><p>Phone: (438) 878-0897 | Email: mohamed_belko@outlook.com | LinkedIn: mohamed-belko-857b651a1</p><p>&copy; <span id="year"></span> Mohamed Marou Belko.</p></footer>
-    <script src="script.js"></script>
+    <footer class="site-footer"><nav aria-label="Contact and resume"><a href="tel:+14388780897">(438) 878-0897</a><a href="mailto:mohamed_belko@outlook.com">mohamed_belko@outlook.com</a><a href="https://www.linkedin.com/in/mohamed-belko-857b651a1">LinkedIn</a><a href="assets/CV_Mohamed_Marou_Belko_Generic.pdf">Resume (PDF, EN)</a></nav><p>© <span id="year"></span> Mohamed Marou Belko.</p></footer><script src="translations.js"></script><script src="i18n.js"></script><script src="script.js"></script>
   </body>
 </html>

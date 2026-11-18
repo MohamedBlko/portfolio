@@ -9,6 +9,55 @@ const closeProjectButtons = document.querySelectorAll("[data-close-project]");
 const detailTabs = document.querySelectorAll(".detail-tab");
 const simSlider = document.querySelector("#sim-slider");
 const simCanvas = document.querySelector("#sim-canvas");
+const contactForm = document.querySelector("#contact-form");
+
+if (contactForm) {
+  const contactSubmit = contactForm.querySelector('button[type="submit"]');
+  const contactStatus = document.querySelector("#contact-status");
+  const validationMessage = (field) => {
+    field.setCustomValidity("");
+    const message = field.validity.valueMissing ? "Please complete this field." : field.validity.typeMismatch ? "Enter a valid email address." : "";
+    field.setCustomValidity(window.portfolioI18n?.t(message) || message);
+  };
+  contactForm.addEventListener("invalid", (event) => validationMessage(event.target), true);
+  contactForm.addEventListener("input", (event) => event.target.setCustomValidity?.(""));
+  document.addEventListener("portfolio:language", () => {
+    contactForm.querySelectorAll("input, textarea").forEach((field) => {
+      if (field.validity.customError) validationMessage(field);
+    });
+  });
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (contactSubmit.disabled) return;
+
+    const fields = new FormData(contactForm);
+    fields.set("subject", fields.get("subject").trim() || "Portfolio inquiry");
+    contactSubmit.disabled = true;
+    contactStatus.textContent = "Sending your message...";
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: fields,
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+        contactStatus.textContent = "Thanks! Your message was sent.";
+      } else if (response.status === 429) {
+        contactStatus.textContent = "Too many requests. Please wait a moment and try again.";
+      } else {
+        contactStatus.textContent = "Your message could not be sent. Try again or use the email address on this page.";
+      }
+    } catch {
+      contactStatus.textContent = "Could not confirm that your message was sent. Check your connection or email me directly.";
+    } finally {
+      contactSubmit.disabled = false;
+    }
+  });
+}
 
 const projectDetails = {
   chess: {
@@ -201,12 +250,22 @@ if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.querySelector(".sr-only").textContent = isOpen ? "Close navigation" : "Open navigation";
   });
 
   siteNav.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
       siteNav.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
+      navToggle.querySelector(".sr-only").textContent = "Open navigation";
+    }
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+      siteNav.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.querySelector(".sr-only").textContent = "Open navigation";
+      navToggle.focus();
     }
   });
 }

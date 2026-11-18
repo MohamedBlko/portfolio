@@ -5,23 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Contact Mohamed Marou Belko for electrical engineering opportunities.">
     <title>Contact | Mohamed Marou Belko</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Urbanist:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&amp;family=Urbanist:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <canvas id="field-canvas" aria-hidden="true"></canvas><div class="atmosphere" aria-hidden="true"></div>
-    <header class="site-header"><a class="brand" href="index.html" aria-label="Mohamed Marou Belko home"><span class="brand-symbol">MB</span><span class="brand-copy"><strong>Mohamed Marou Belko</strong><small>Electrical Engineer in Training</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button><nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html">Contact</a></nav></header>
-    <main class="page-main">
-      <section class="section page-hero contact-section" aria-labelledby="contact-title">
-        <div><p class="eyebrow">Contact</p><h1 id="contact-title" class="page-title">Available for electrical engineering opportunities.</h1><p>Montreal, Quebec | Full-time, internship and project-based technical roles | Email: mohamed_belko@outlook.com | Phone: (438) 878-0897.</p></div>
-        <div class="contact-links"><a href="mailto:mohamed_belko@outlook.com">Email</a><a href="assets/CV_Mohamed_Marou_Belko_Generic.pdf">Resume</a><a href="https://www.linkedin.com/in/mohamed-belko-857b651a1">LinkedIn</a><a href="https://github.com/MohamedBlko">GitHub</a></div>
-      </section>
-      <section class="section gallery-section" aria-labelledby="gallery-title">
-        <div class="section-header"><p class="eyebrow">Engineering gallery</p><h2 id="gallery-title">Visual evidence to add as projects mature.</h2><p>This section is structured for project photos, electrical drawings, panels, simulations, lab captures and documentation screenshots.</p></div>
-        <div class="gallery-grid"><article><span>Panel</span><strong>Control cabinet</strong></article><article><span>Drawing</span><strong>Single-line diagram</strong></article><article><span>Simulation</span><strong>Load profile</strong></article><article><span>Lab</span><strong>Oscilloscope capture</strong></article><article><span>Automation</span><strong>PLC / HMI screen</strong></article><article><span>Report</span><strong>Commissioning notes</strong></article></div>
-      </section>
-      <section class="section publications-section" aria-labelledby="publications-title"><div class="section-header"><p class="eyebrow">Reports and publications</p><h2 id="publications-title">Technical writing matters.</h2><p>Add design reports, lab reports, posters, capstone documentation, conference notes or published material here as PDF links when ready.</p></div></section>
+    <header class="site-header"><a class="brand" href="index.html" aria-label="Mohamed Marou Belko home"><span class="brand-symbol">MB</span><span class="brand-copy"><strong>Mohamed Marou Belko</strong><small>Electrical Engineer in Training</small></span></a><nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="timeline.html">Timeline</a><a href="contact.html" aria-current="page">Contact</a></nav><div class="header-controls"><div class="language-switch" role="group" aria-label="Language" hidden><button type="button" data-language="fr" lang="fr" aria-label="Français" aria-pressed="false">FR</button><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button></div><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button></div></header>
+    <main class="page-main contact-page">
+      <div class="section contact-intro">
+        <h1 class="page-title">Contact</h1>
+        <p>Open to full-time, internship and project-based roles in electrical engineering.</p>
+      </div>
+      <div class="section contact-layout">
+        <section aria-labelledby="message-title">
+          <h2 id="message-title">Write a message</h2>
+          <form id="contact-form" method="post" action="https://formspree.io/f/xppdpvbw">
+            <div class="contact-fields">
+              <label>Name<input name="name" autocomplete="name" maxlength="100" required></label>
+              <label>Email<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+            </div>
+            <label>Subject <span>(optional)</span><input name="subject" maxlength="100"></label>
+            <label>Message<textarea name="message" rows="6" maxlength="800" required></textarea></label>
+            <button class="button primary" type="submit">Send message</button>
+            <p class="contact-privacy">Messages are processed by <a href="https://formspree.io/legal/privacy-policy">Formspree</a>.</p>
+            <p id="contact-status" role="status"></p>
+          </form>
+        </section>
+        <section class="contact-details" aria-labelledby="details-title">
+          <h2 id="details-title">Contact details</h2>
+          <dl>
+            <div><dt>Email</dt><dd><a href="mailto:mohamed_belko@outlook.com">mohamed_belko@outlook.com</a></dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+14388780897">(438) 878-0897</a></dd></div>
+            <div><dt>Location</dt><dd>Montreal, Quebec</dd></div>
+          </dl>
+          <ul class="contact-resources" aria-label="Professional links">
+            <li><a href="assets/CV_Mohamed_Marou_Belko_Generic.pdf">Resume (PDF, EN)</a></li>
+            <li><a href="https://www.linkedin.com/in/mohamed-belko-857b651a1">LinkedIn</a></li>
+            <li><a href="https://github.com/MohamedBlko">GitHub</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </section>
+      </div>
     </main>
-    <footer class="site-footer"><p>Phone: (438) 878-0897 | Email: mohamed_belko@outlook.com | LinkedIn: mohamed-belko-857b651a1 | Resume available as PDF</p><p>&copy; <span id="year"></span> Mohamed Marou Belko.</p></footer>
-    <script src="script.js"></script>
+    <footer class="site-footer"><nav aria-label="Contact and resume"><a href="tel:+14388780897">(438) 878-0897</a><a href="mailto:mohamed_belko@outlook.com">mohamed_belko@outlook.com</a><a href="https://www.linkedin.com/in/mohamed-belko-857b651a1">LinkedIn</a><a href="assets/CV_Mohamed_Marou_Belko_Generic.pdf">Resume (PDF, EN)</a></nav><p>© <span id="year"></span> Mohamed Marou Belko.</p></footer><script src="translations.js"></script><script src="i18n.js"></script><script src="script.js"></script>
   </body>
 </html>
