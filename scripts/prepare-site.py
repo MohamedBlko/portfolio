@@ -51,5 +51,7 @@ for path in ROOT.glob('*.html'):
     if page == 'index.html':
         # A meaningful title without changing the existing 3D scene.
         doc.find('.//h1').set('class', 'home-title')
-    path.write_text(html.tostring(doc, encoding='unicode', doctype='<!doctype html>', method='html')+'\n', encoding='utf-8')
+    serialized = html.tostring(doc, encoding='unicode', doctype='<!doctype html>', method='html')
+    serialized = '\n'.join('' if not line.strip() else line for line in serialized.splitlines())
+    path.write_text(serialized+'\n', encoding='utf-8')
 print('Prepared shared navigation and language controls on all HTML pages.')
