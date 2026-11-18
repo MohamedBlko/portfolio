@@ -28,6 +28,35 @@ Saved plots are not live simulations; code downloads are labeled excerpts.
 
 ## How to customize
 
+### One-command preparation
+
+After editing, press **Ctrl+Shift+B** in VS Code to run **Portfolio: generate and check**.
+You can also use **Terminal > Run Build Task**, or run this from the repository root:
+
+```sh
+node scripts/prepare-portfolio.mjs
+```
+
+This runs the eight generation/check commands below, in order, and stops on the
+first failure. It checks for Python 3 with `lxml` before modifying generated files.
+Install that dependency once with `py -3 -m pip install --user lxml` on Windows
+(or use `python3`/`python` as appropriate). A custom Python executable can be set
+using the `PORTFOLIO_PYTHON` environment variable. No npm install is needed.
+
+The task does not pull, commit, push, deploy, or start a preview server. Pull before
+editing when needed, then run this task after editing, review the result locally,
+and commit/push the intended sources and generated files yourself. A failed task
+may leave intermediate generated files: fix the error and rerun the complete task
+before publishing.
+
+Runner-only tests, which do not regenerate the website:
+
+```sh
+node scripts/test-prepare-portfolio.mjs
+```
+
+### Individual commands
+
 Edit the corresponding HTML page for profile and contact information. The project
 catalog and 16 additional case studies are generated from `case-studies.json`
 and `assets/projects/media-index.json` with:
