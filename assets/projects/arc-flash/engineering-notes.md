@@ -18,4 +18,4 @@ The report contains input and result tables, and the archive preserves a set of 
 These are academic calculations, not an approved safety assessment. They must not be used to select PPE, authorize energized work or establish safe operating procedures for a real installation.
 
 ## Evidence
-ELE8458 TP2 team report and saved TCC plots. Full marked reports and personal identifiers are not published.
+Team report and saved TCC plots.

@@ -18,4 +18,4 @@ Le rapport contient des tableaux de paramètres et de résultats; l'archive cons
 Il s'agit de calculs pédagogiques, pas d'une évaluation de sécurité approuvée. Ils ne doivent pas servir à sélectionner des EPI, à autoriser des travaux sous tension ou à établir des procédures pour une installation réelle.
 
 ## Références
-Rapport d'équipe du TP2 d'ELE8458 et courbes TCC sauvegardées. Les rapports corrigés complets et les identifiants personnels ne sont pas publiés.
+Rapport d'équipe et courbes TCC sauvegardées.

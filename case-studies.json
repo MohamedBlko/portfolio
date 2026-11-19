@@ -31,7 +31,7 @@
     "work":["Organize equipment input parameters and fault cases.","Read the relationship between fault current and clearing time on TCC plots.","Compare how protection assumptions change calculated exposure.","Document assumptions and calculation boundaries."],
     "outcome":"The report contains input and result tables, and the archive preserves a set of annotated TCC plots. The gallery presents these as saved coursework evidence.",
     "limits":"These are academic calculations, not an approved safety assessment. They must not be used to select PPE, authorize energized work or establish safe operating procedures for a real installation.",
-    "sources":"ELE8458 TP2 team report and saved TCC plots. Full marked reports and personal identifiers are not published."},
+    "sources":"Team report and saved TCC plots."},
   {"slug":"harmonics","title":"Nonlinear loads and transformers","category":"Energy","context":"Power quality | Transformer connections","status":"Measurement study","summary":"LED-load measurements, waveform distortion and three-phase transformer configurations.","tags":["Power quality","Transformers","Measurements"],
     "objective":"Investigate the electrical behavior of nonlinear lighting loads and compare transformer connections in a reduced laboratory setup.",
     "work":["Characterize current and voltage waveforms for the tested loads.","Record power and harmonic quantities with laboratory instruments.","Compare three-phase winding configurations.","Relate oscilloscope captures and instrument readings to the report calculations."],

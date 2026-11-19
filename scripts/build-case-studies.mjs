@@ -66,7 +66,7 @@ for (const [index, p] of projects.entries()) {
     ${p.flow && !p.generic ? `<section class="section case-content"><h2>Engineering workflow</h2>${flow(p)}</section>` : ''}
     ${gallery(items.filter((m) => m.path !== cover?.path))}
     ${snippet ? `<section class="section case-content"><h2>Source excerpt <small class="media-count">${esc(snippet.language)}</small></h2><p>${esc(snippet.note)}</p><pre class="case-code"><code>${esc(snippet.code)}</code></pre><div class="case-downloads"><a href="assets/projects/${p.slug}/${snippet.name}" download>Download ${esc(snippet.name)}</a></div></section>` : ''}
-    <section class="section case-content"><h2>Evidence and documentation</h2><p>${esc(p.sources)}</p><div class="case-downloads"><a href="assets/projects/${p.slug}/engineering-notes.md" download>Engineering summary (.md)</a>${p.external ? `<a href="${esc(p.external.url)}" target="_blank" rel="noopener noreferrer">${esc(p.external.label)}</a>` : ''}<a href="contact.html">Contact</a></div></section>
+    <section class="section case-content"><h2>Documentation</h2><p>${esc(p.sources)}</p><div class="case-downloads"><a href="assets/projects/${p.slug}/engineering-notes.md" download>Engineering summary (.md)</a>${p.external ? `<a href="${esc(p.external.url)}" target="_blank" rel="noopener noreferrer">${esc(p.external.label)}</a>` : ''}<a href="contact.html">Contact</a></div></section>
     <nav class="section case-content case-nav" aria-label="Case study navigation"><a href="projects.html">All projects</a><a href="project-${next.slug}.html">Next: ${esc(next.title)}</a></nav>`));
 }
 const cards = projects.map((p) => {

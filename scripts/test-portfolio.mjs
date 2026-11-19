@@ -28,6 +28,11 @@ assert.equal(api.language, 'en');
 api.setLanguage('fr');
 assert.equal(writes.get('portfolio-language'), 'fr');
 assert.equal(context.document.documentElement.lang, 'fr');
+for (const key of Object.keys(JSON.parse(read('locales/fr.json')))) {
+  assert.equal(key, key.replace(/\s+/g, ' ').trim(), `Translation key has extra whitespace: ${JSON.stringify(key)}`);
+}
+assert.equal(api.t('CEP'), 'CPI');
+assert.equal(api.t('Mohamed Marou Belko | Candidate to the Engineering Profession (CEP)'), 'Mohamed Marou Belko | CPI en génie électrique');
 for (const [source, translated] of Object.entries(context.window.portfolioFrench)) assert.equal(api.t(source), translated, source);
 for (const [source, translated] of [
   ['6 of 19 projects and studies','6 sur 19 projets et études'],
