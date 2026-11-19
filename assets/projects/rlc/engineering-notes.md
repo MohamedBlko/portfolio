@@ -1,21 +1,23 @@
-# Single-phase RLC measurements
+# Electrotechnics: circuits and transformers
 
-Electrotechnics | Circuit response | Measurement study
+Electrotechnics | AC systems | Measurements and simulation
 
 ## Objective
-Relate sinusoidal circuit behavior, resonance and power quantities to experimental measurements.
+Demonstrate practical electrotechnical skills by connecting circuit calculations, transformer characterization and three-phase analysis with measurements and simulation.
 
 ## Engineering work
-- Prepare series and parallel RLC circuit calculations.
-- Compare the response of resistive and reactive loads.
-- Record voltage, current and power quantities.
-- Discuss discrepancies between theoretical and experimental values.
+- Analyze series and parallel RLC circuits: impedance, phase shift, resonance and power quantities.
+- Compare calculations with measured voltage, current and power, and explain discrepancies.
+- Characterize a single-phase transformer through no-load, short-circuit and load tests.
+- Examine magnetizing current, equivalent-circuit parameters, efficiency and voltage regulation.
+- Analyze balanced and unbalanced three-phase loads in EMTP, including the effect of a neutral conductor.
+- Interpret phase and line quantities, waveforms and power measurements using two- and three-wattmeter methods.
 
 ## Outcome
-The team report contains circuit diagrams and measurement tables. The gallery extracts these figures while omitting the repeated team-name headers.
+The collected work demonstrates a progression from single-phase circuit measurements to transformer characterization and three-phase simulation. Reports document test circuits, measurement tables and transformer performance curves; EMTP results support analysis of phase relationships, load imbalance and neutral behavior. The current gallery shows selected RLC evidence, not the full set of transformer and three-phase results.
 
 ## Limits
-The table entries are preserved academic observations, not certified instrument results. The original experiment has not been repeated for this page.
+These are laboratory-scale exercises and saved simulations, not an industrial installation or certified equipment assessment. The experiments have not been repeated for this page; measurements and simulation results must be interpreted within their original assumptions.
 
 ## Evidence
-ELE3400 laboratory 1 team report, selected circuit and measurement excerpts.
+Team reports on RLC circuits, single-phase transformer tests and three-phase circuits. Selected RLC figures are published; full reports, personal identifiers, course notes and solution manuals are not reproduced.
